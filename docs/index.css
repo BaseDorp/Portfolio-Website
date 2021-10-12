@@ -1,4 +1,81 @@
-*{
+* {
+    
+    font-family: sans-serif;
+
+    
+}
+
+header{
+    text-align: center;
+    height: 650px;
+
+    background-image: url(https://cdn2.unrealengine.com/Unreal+Engine%2Fblog%2Fa-first-look-at-unreal-engine-5%2FUE5_Announcement_Feed_Large-1920x1080-8c8ab609059186399d92ca5dc8a748e62880e0e7.jpg);
+    background-size: cover;
+}
+
+body{
+    margin: 0px;
     background-color: rgba(38, 42, 48, 1);
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+a, a:visited, h1, h2, h3{
+    text-decoration: none;
     color: rgba(178, 177, 241, 1);
+
+    font-size: 25px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+a:hover{
+    background-color: rgba(1, 1, 1, 0.25);
+}
+
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 300px;
+
+    
+}
+
+.profile-text{   
+    display: grid;
+    align-items: center;
+}
+
+.about{
+    background-color: rgba(49, 69, 99, 1);
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project{
+    background-color: rgba(49, 69, 99, 1);
+    margin-top: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-bar, .tags{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tags{
+    background-color: grey;
+}
+
+p{
+    background-color:tomato;
 }
