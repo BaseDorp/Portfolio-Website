@@ -7,33 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Sam Hirsch Portfolio</title>
+    <link rel="icon" href="https://www.pngrepo.com/png/114335/512/programming-code-signs.png" type="image/x-icon">
+    <!-- TODO get an actual webpage logo (probably 'SH') -->
 </head>
 
 <body>
 
     <!-- Header -->
     <header>
+        <!-- Nagivation Bar -->
         <nav>
-            <a href="/docs/index.html">Sam Hirsch</a>
-            <a href="/files/SamuelHirsch_GameProgrammerResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-            <a href="https://github.com/BaseDorp" target="_blank" rel="noopener noreferrer">Github</a>
-            <a href="https://www.linkedin.com/in/samhirschdev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a>Email</a>
+            <div class="header-title">
+                <a href="/docs/index.html">Sam Hirsch</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="/files/SamuelHirsch_GameProgrammerResume.pdf" target="_blank"
+                        rel="noopener noreferrer">Resume</a>
+                </li>
+                <li>
+                    <a href="https://github.com/BaseDorp" target="_blank" rel="noopener noreferrer">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/samhirschdev/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                </li>
+                <li>
+                    <a>Email</a>
+                </li>
+            </ul>
         </nav>
-
-
 
         <!-- Profile -->
         <div class="profile">
             <!-- <video></video> Background Video -->
-            <img src="/img/ColdPic3.jpg" alt="Self Portait Picture" width="480" height="360">
-            <!-- TODO add file dimensions -->
+            <img src="/img/ColdPic3.jpg" alt="Portait Picture" width="480" height="360">
             <div class="profile-text">
                 <h1>Software Engineer</h1>
                 <h2>*Insert Quote*</h2>
             </div>
         </div>
     </header>
+
+    <!-- <div class="view-more">
+        <h3>View More</h3>
+        <h3>v</h3>
+    </div> -->
 
     <main>
         <!-- About -->
@@ -46,19 +65,22 @@
 
         <!-- Projects -->
         <h3>Projects</h3>
-        <div class="project">
+        <div class="project-container">
             <div class="project-bar">
-                <button>
-                    <img> <!-- Drop down, Use in page linked with IDs-->
-                    *Project Name*
-                </button>
+
+                <img class="project-arrow"
+                    src="https://cdn.iconscout.com/icon/free/png-256/back-arrow-1767523-1502427.png"
+                    alt="drop down arrow" width="50" height="50"> <!-- TODO get arrow icon -->
+
+                <h4>*Project Name*</h4>
 
                 <div class="tags">
-                    <h4>C++</h4>
-                    <h4>Web Dev</h4>
+                    <h5>C++</h5>
+                    <h5>Web Dev</h5>
                 </div>
 
             </div>
+
             <p>*Description*</p>
         </div>
     </main>

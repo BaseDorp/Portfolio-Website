@@ -1,20 +1,12 @@
+/* ------------------- Styling across whole document ------------------- */
 * {
-    
     font-family: sans-serif;
-
-    
-}
-
-header{
-    text-align: center;
-    height: 650px;
-
-    background-image: url(https://cdn2.unrealengine.com/Unreal+Engine%2Fblog%2Fa-first-look-at-unreal-engine-5%2FUE5_Announcement_Feed_Large-1920x1080-8c8ab609059186399d92ca5dc8a748e62880e0e7.jpg);
-    background-size: cover;
 }
 
 body{
-    margin: 0px;
+    background-image: url(https://cdn2.unrealengine.com/Unreal+Engine%2Fblog%2Fa-first-look-at-unreal-engine-5%2FUE5_Announcement_Feed_Large-1920x1080-8c8ab609059186399d92ca5dc8a748e62880e0e7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 620px;
     background-color: rgba(38, 42, 48, 1);
 }
 
@@ -24,6 +16,7 @@ main{
     
 }
 
+/* All main text/titles */
 a, a:visited, h1, h2, h3{
     text-decoration: none;
     color: rgba(178, 177, 241, 1);
@@ -35,15 +28,41 @@ a, a:visited, h1, h2, h3{
 }
 
 a:hover{
-    background-color: rgba(1, 1, 1, 0.25);
+    background-color: rgba(1, 1, 1, 0.35);
 }
+
+p{
+    color:white;
+}
+
+/* ------------------- Header ------------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 35px;
+}
+
+.header-links{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+}
+
+li{
+    margin: 0 15px;
+}
+
+/* ------------------- Profile ------------------- */
 
 .profile{
     display: flex;
-    justify-content: space-evenly;
-    padding: 100px 300px;
-
-    
+    justify-content: space-between;
+    margin: 100px 300px;
 }
 
 .profile-text{   
@@ -51,31 +70,70 @@ a:hover{
     align-items: center;
 }
 
+.profile-text h1{
+    background-color: rgba(196, 196, 196, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+
+    font-size: 30px;
+}
+
+/* ------------------- About ------------------- */
 .about{
     background-color: rgba(49, 69, 99, 1);
+    border: 3px solid black;
 
     display: flex;
     justify-content: space-evenly;
 }
 
-.project{
+/* ------------------- Projects ------------------- */
+.project-container{
     background-color: rgba(49, 69, 99, 1);
     margin-top: 0;
     margin-bottom: 0;
 
-    display: flex;
-    flex-direction: column;
+    border: 3px solid black;
 }
 
-.project-bar, .tags{
+.project-bar{
+    height: 50px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
+
+    border-bottom: 3px solid black;
+    cursor: pointer;
+}
+
+.project-bar img{
+    transform: rotate(180deg);
+}
+
+.project-bar h4{
+    font-size: 20px;
+    margin: auto;
 }
 
 .tags{
-    background-color: grey;
+    display: flex;
+    justify-content: right;
 }
 
-p{
-    background-color:tomato;
+.tags h5{
+    background: 3px rgba(196, 196, 196, 1);
+    padding: 4px;
+    border-radius: 10px;
+    margin: auto;
+    margin-right: 7px;
+    font-size: 15px;
 }
+
+/* --------------- 'View More' text --------------- */
+/* .view-more{
+    display: grid;
+    position: relative;
+    left: 45%;
+    margin-top: 0;
+    margin-bottom: 0;
+} */
