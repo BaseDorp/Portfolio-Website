@@ -42,6 +42,10 @@ a:hover {
   background-color: rgba(1, 1, 1, 0.35);
 }
 
+h3 {
+  margin: 10px;
+}
+
 p {
   color: white;
 }
@@ -119,10 +123,9 @@ li {
 .project-bar {
   /* height: 50px; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
 
-  border-bottom: 3px solid black;
   cursor: pointer;
 }
 
@@ -133,6 +136,14 @@ li {
 .project-bar h4 {
   font-size: 20px;
   margin: auto;
+}
+
+.project-description {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .tags {
@@ -155,19 +166,28 @@ li {
   font-size: 15px;
 }
 
-.project-description {
-  display: flex;
-  justify-content: space-evenly;
-
-  /* padding: 0 18px; */
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+/* ------------------- Project Slideshow ------------------- */
+.slideshow {
 }
 
-.project-description p {
-  margin-top: auto;
-  margin-bottom: auto;
+.slide {
+  display: none;
+  border: 2px solid blue;
+}
+
+.slide p {
+  text-align: center;
+  background-color: rgba(1, 1, 1, 0.35);
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.prev,
+.next {
+  color: white;
+  border-radius: 0;
+  cursor: pointer;
+  z-index: 2;
 }
 
 /* --------------- 'View More' text --------------- */

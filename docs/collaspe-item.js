@@ -1,3 +1,8 @@
+/*
+    Derived from https://www.w3schools.com/howto/howto_js_collapsible.asp
+*/
+
+
 // get all the drop down bars
 let projects = document.querySelectorAll(".project-bar");
 
@@ -15,9 +20,11 @@ function collapsibleClicked() {
         // closes
         content.style.maxHeight = null;
         this.querySelector("img").style.transform = "rotate(180deg)";
+        this.style.borderBottom = "0px";
     } else {
         // opens
         content.style.maxHeight = content.scrollHeight + "px";
         this.querySelector("img").style.transform = "rotate(-90deg)";
+        this.style.borderBottom = "3px solid black";
     }
 }
