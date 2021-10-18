@@ -12,7 +12,7 @@ for (let item of projects) {
 }
 
 function collapsibleClicked() {
-    // this.classList.toggle("active"); // TODO idk what this does but i dont want it
+    this.classList.toggle("active"); // TODO idk what this does but i dont want it
     let content = this.nextElementSibling;
 
     // checks if the content is collapsed or not
@@ -21,10 +21,13 @@ function collapsibleClicked() {
         content.style.maxHeight = null;
         this.querySelector("img").style.transform = "rotate(180deg)";
         this.style.borderBottom = "0px";
+        // this.document.querySelector(".project-content").style.margin = "0px";
     } else {
         // opens
         content.style.maxHeight = content.scrollHeight + "px";
         this.querySelector("img").style.transform = "rotate(-90deg)";
         this.style.borderBottom = "3px solid black";
+        // this.querySelectorAll(".project-content").style.margin = "20px";
+        console.log(document.querySelector(".project-content"));
     }
 }

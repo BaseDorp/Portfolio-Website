@@ -23,3 +23,11 @@ function changeSlide(n) {
 
     slides[slideIndex - 1].style.display = "block";
 }
+
+// Adjust arrows and caption to snap to image
+let nextArrow = document.querySelectorAll(".next");
+let prevArrow = document.querySelectorAll(".prev");
+
+
+// get current slide
+// set 
