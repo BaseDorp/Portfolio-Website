@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap" rel="stylesheet">
+
     <script type="text/javascript" src="/docs/collaspe-item.js" defer></script>
     <script type="text/javascript" src="/docs/slideshow.js" defer></script>
     <title>Sam Hirsch Portfolio</title>
@@ -18,8 +22,9 @@
 
     <!-- Header -->
     <header>
+        <div class="background-image"></div>
         <!-- Nagivation Bar -->
-        <nav class="animate__animated animate__fadeInDown">
+        <nav>
             <div class="header-title">
                 <a href="/docs/index.html">Sam Hirsch</a>
             </div>
@@ -36,7 +41,7 @@
                         rel="noopener noreferrer">LinkedIn</a>
                 </li>
                 <li>
-                    <a>Email</a>
+                    <a href=’mailto:samhirsch.dev@gmail.com’>Email</a> 
                 </li>
             </ul>
         </nav>
@@ -52,8 +57,9 @@
         </div>
     </header>
 
+    <!-- View More Seperator -->
     <div class="view-more">
-        <a>vv View More vv</a>>
+        <a onclick="document.querySelector('main').scrollIntoView();">vv View More vv</a>>
     </div>
 
     <main>
@@ -80,12 +86,13 @@
             </p>
         </div>
 
+        <!-- View More Seperator -->
         <div class="view-more">
-            <a>vv Projects vv</a>>
+            <a onclick="document.querySelector('.projects').scrollIntoView();">vv Projects vv</a>>
         </div>
 
         <!-- Projects -->
-        <h3>Projects</h3>
+        <h3 class="projects">Projects</h3>
         <div class="project-container">
             <div class="project-bar">
 
@@ -95,7 +102,7 @@
                 <!-- TODO get arrow icon -->
 
 
-                <h4>Asteroids using Quadtrees</h4>
+                <h4>Asteroids with Quadtrees</h4>
 
                 <div class="tags">
                     <h5>C++</h5>
@@ -152,7 +159,65 @@
                 <!-- TODO get arrow icon -->
 
 
-                <h4>Tabletop Tanks Game</h4>
+                <h4>Portfolio Website</h4>
+
+                <div class="tags">
+                    <h5>HTML</h5>
+                    <h5>CSS</h5>
+                    <h5>JavaScript</h5>
+                </div>
+
+            </div>
+
+            <div class="project-content">
+                <!-- Slideshow -->
+                <div class="slideshow">
+
+                    <figure class="slide">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU">
+                        <figcaption>Caption</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <figcaption>Caption</figcaption>
+                    </figure>
+
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+
+                <div class="description">
+                    <div class="description-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button"
+                                width="50" height="50">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
+                                alt="WebGL logo button" width="50" height="50">
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum mi. Maecenas augue mi,
+                        aliquam vitae tristique nec, fringilla ut eros. Mauris auctor faucibus augue, et facilisis ipsum
+                        luctus at. Fusce eget hendrerit arcu, ut efficitur massa. Nullam facilisis sed felis at auctor.
+                        Cras ac mi ligula.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-bar">
+
+                <img class="project-arrow"
+                    src="https://cdn.iconscout.com/icon/free/png-256/back-arrow-1767523-1502427.png"
+                    alt="drop down arrow" width="50" height="50">
+                <!-- TODO get arrow icon -->
+
+
+                <h4>Unity Tabletop Tanks Game</h4>
 
                 <div class="tags">
                     <h5>C#</h5>
@@ -201,16 +266,93 @@
                 </div>
             </div>
         </div>
+        <div class="project-container">
+            <div class="project-bar">
+
+                <img class="project-arrow"
+                    src="https://cdn.iconscout.com/icon/free/png-256/back-arrow-1767523-1502427.png"
+                    alt="drop down arrow" width="50" height="50">
+                <!-- TODO get arrow icon -->
+
+
+                <h4>Hardcore Pizza Delivery</h4>
+
+                <div class="tags">
+                    <h5>C++</h5>
+                    <h5>Unreal Engine</h5>
+                </div>
+
+            </div>
+
+            <div class="project-content">
+                <!-- Slideshow -->
+                <div class="slideshow">
+
+                    <figure class="slide">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU">
+                        <figcaption>Caption</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <figcaption>Caption</figcaption>
+                    </figure>
+
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+
+                <div class="description">
+                    <div class="description-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button"
+                                width="50" height="50">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
+                                alt="WebGL logo button" width="50" height="50">
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum mi. Maecenas augue mi,
+                        aliquam vitae tristique nec, fringilla ut eros. Mauris auctor faucibus augue, et facilisis ipsum
+                        luctus at. Fusce eget hendrerit arcu, ut efficitur massa. Nullam facilisis sed felis at auctor.
+                        Cras ac mi ligula.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <!-- this should be very similiar to header -->
+        <nav>
+            <div class="footer-title">
+                <a href="/docs/index.html">Sam Hirsch</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="/files/SamuelHirsch_GameProgrammerResume.pdf" target="_blank"
+                        rel="noopener noreferrer">Resume</a>
+                </li>
+                <li>
+                    <a href="https://github.com/BaseDorp" target="_blank" rel="noopener noreferrer">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/samhirschdev/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                </li>
+                <li>
+                    <a>Email</a>
+                </li>
+            </ul>
+        </nav>
     </footer>
 
     <!-- Side Bar -->
     <aside>
-        <button><a>SH</a></button>
+        <!-- <button><a>SH</a></button> -->
 
     </aside>
 

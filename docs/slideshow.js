@@ -2,6 +2,11 @@
     derived from https://www.w3schools.com/howto/howto_js_slideshow.asp
 */
 
+// get all slideshows
+let slideshows = document.querySelectorAll(".slideshow");
+// go through each slideshow and see which slide is active
+
+
 let slideIndex = 1;
 changeSlide(slideIndex);
 
@@ -18,16 +23,12 @@ function changeSlide(n) {
     }
 
     for (let s of slides) {
-        s.style.display = "none"; // pretty sure we dont need this either since its set to none in the css
+        // sets all slides to not visible
+        s.style.display = "none"; 
     }
 
+    // set current slide to visible
     slides[slideIndex - 1].style.display = "block";
 }
 
-// Adjust arrows and caption to snap to image
-let nextArrow = document.querySelectorAll(".next");
-let prevArrow = document.querySelectorAll(".prev");
-
-
-// get current slide
-// set 
+// TODO make next/prev arrows and caption snap to slide depending on size
