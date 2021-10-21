@@ -55,6 +55,7 @@ h3 {
 p {
   color: white;
   font-size: 18px;
+  word-wrap: break-word;
 }
 
 @keyframes hover-move {
@@ -68,6 +69,7 @@ p {
 header {
   background-image: linear-gradient(rgb(1, 1, 1, 0.4), rgb(1, 1, 1, 0));
   height: 90vh;
+  margin: 0 auto;
 }
 
 .background-image {
@@ -85,6 +87,10 @@ header nav {
   justify-content: space-between;
   padding: 5px 20px;
 }
+
+/* .header-title button{
+  display: none;
+} */
 
 /* .header-links {
   display: flex;
@@ -104,7 +110,8 @@ nav a {
   cursor: pointer;
 }
 
-.side-panel-button {
+.side-panel-button,
+.closebtn {
   display: none;
 }
 
@@ -118,7 +125,7 @@ nav a {
 
 .profile img {
   border-radius: 50px;
-  max-width: 360;
+  max-width: 360px;
 }
 
 .profile-text {
@@ -303,17 +310,16 @@ nav a {
   cursor: pointer;
 }
 
-/* --------------- 'View More' text --------------- */
+/* --------------- Footer --------------- */
 footer {
   background-image: linear-gradient(to top, rgb(1, 1, 1, 0.5), rgb(0, 0, 0, 0));
   padding-top: 50px;
 }
 
 footer nav {
-  margin: 0;
+  margin: 0px 20px;
   margin-top: 10px;
   display: flex;
-  /* justify-content: center; */
 }
 
 footer a {
@@ -324,6 +330,13 @@ footer a {
 
 /* --------------- Media Queries --------------- */
 @media screen and (max-width: 850px) {
+  main {
+    width: 90%;
+  }
+
+  p {
+    font-size: 15px;
+  }
 
   /* ----- Side Bar ------- */
   .side-panel-button {
@@ -382,9 +395,37 @@ footer a {
 
   /* ----- About ------- */
 
-  
-  /* ----- Projects ------- */
+  .profile-text h1 {
+    font-size: 35px;
+    padding: 20px;
+  }
 
+  .about {
+    display: grid;
+  }
+
+  .about p {
+    margin: 10px auto;
+    width: 90%;
+    height: 50%;
+  }
+
+  /* ----- Projects ------- */
+  .project-content {
+    display: grid;
+  }
+
+  .project-bar h4 {
+    font-size: 20px;
+  }
+
+  .slideshow {
+    width: 100%;
+  }
+
+  .description {
+    width: 100%;
+  }
 
   /* ----- Footer ------- */
   footer {
@@ -399,5 +440,10 @@ footer a {
 
   .footer-title a {
     display: block;
+  }
+
+  .tags {
+    font-size: 12px;
+    width: 50%;
   }
 }

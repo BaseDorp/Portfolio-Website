@@ -20,10 +20,12 @@ function collapsibleClicked() {
         content.style.maxHeight = null;
         this.querySelector("img").style.animation = 'dropDown 0.3s reverse';
         this.style.borderBottom = "0px";
+        content.style.margin = "0px";
     } else {
         // opens
         content.style.maxHeight = content.scrollHeight + "px";
         this.querySelector("img").style.animation = 'dropDown 0.3s forwards';
         this.style.borderBottom = "3px solid black";
+        content.style.margin = "5px";
     }
 }
