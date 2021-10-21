@@ -1,361 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <script type="text/javascript" src="/docs/collaspe-item.js" defer></script>
     <script type="text/javascript" src="/docs/slideshow.js" defer></script>
+    <script type="text/javascript" src="/docs/copy-text.js" defer></script>
+    <script type="text/javascript" src="/docs/side-bar.js" defer></script>
+
     <title>Sam Hirsch Portfolio</title>
-    <link rel="icon" href="https://www.pngrepo.com/png/114335/512/programming-code-signs.png" type="image/x-icon">
+    <link
+      rel="icon"
+      href="https://www.pngrepo.com/png/114335/512/programming-code-signs.png"
+      type="image/x-icon"
+    />
     <!-- TODO get an actual webpage logo (probably 'SH') -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
     <header>
-        <div class="background-image"></div>
-        <!-- Nagivation Bar -->
-        <nav>
-            <div class="header-title">
-                <a href="/docs/index.html">Sam Hirsch</a>
-            </div>
-            <ul>
-                <li>
-                    <a href="/files/SamuelHirsch_GameProgrammerResume.pdf" target="_blank"
-                        rel="noopener noreferrer">Resume</a>
-                </li>
-                <li>
-                    <a href="https://github.com/BaseDorp" target="_blank" rel="noopener noreferrer">Github</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/samhirschdev/" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a>
-                </li>
-                <li>
-                    <a href=’mailto:samhirsch.dev@gmail.com’>Email</a> 
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Profile -->
-        <div class="profile">
-            <!-- <video></video> Background Video -->
-            <img src="/img/ColdPic3.jpg" alt="Portait Picture" width="480" height="360">
-            <div class="profile-text">
-                <h1>Software Engineer</h1>
-                <h2>*Insert Quote*</h2>
-            </div>
+      <div class="background-image"></div>
+      <!-- Nagivation Bar -->
+      <nav>
+        <div class="header-title">
+          <h1>Sam Hirsch</h1>
+          <button class="side-panel-button" onclick="openNav()">&#9776;</button>
         </div>
+
+        <div class="header-links" id="side-panel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <a
+            href="/files/SamuelHirsch_GameProgrammerResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume</a
+          >
+
+          <a
+            href="https://github.com/BaseDorp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/samhirschdev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+
+          <a onclick="copy()">Email</a>
+        </div>
+      </nav>
+
+      <!-- Profile -->
+      <div class="profile">
+        <!-- <video></video> Background Video -->
+        <img
+          src="/img/2019NewYearPortrait.jpg"
+          alt="Portait Picture"
+          width="360"
+          height="480"
+        />
+        <div class="profile-text">
+          <h1>Software Engineer</h1>
+          <h2>*Insert Quote*</h2>
+        </div>
+      </div>
     </header>
 
     <!-- View More Seperator -->
     <div class="view-more">
-        <a onclick="document.querySelector('main').scrollIntoView();">vv View More vv</a>>
+      <a onclick="document.querySelector('main').scrollIntoView();"
+        >vv View More vv</a
+      >
     </div>
 
     <main>
-        <!-- About -->
-        <h3>About Me</h3>
-        <div class="about">
+      <!-- About -->
+      <h3>About Me</h3>
+      <div class="about">
+        <p>
+          My name is Sam Hirsch and I am a recent graduate from Columbia College
+          Chicago. My major is a Bachelor’s of Science in Programming with a
+          minor in Video Game Art. I have been interested in video games ever
+          since I started to create my own games in Minecraft using command
+          blocks. But I realized the limitations and decided to start teaching
+          myself Unreal Engine and C++. I found an interest in technology in
+          high school becoming part of the student computer maintenance team and
+          an editor for a school news broadcast at my high school. My goal is to
+          make an experience that is fun and immersive that players will enjoy
+          playing.
+        </p>
+        <p>
+          Classes/Experience Game Studio 1 & 2 Game Programming 1 & 2 C++
+          Programming 1 & 2 Object Orientated Programming 1 & 2 Graphics
+          Application Programming AI Programming Algorithms Linear Algebra Game
+          Studio 1 & 2 Game Programming 1 & 2 C++ Programming 1 & 2 Object
+          Orientated Programming 1 & 2 Graphics Application Programming AI
+          Programming Algorithms Linear Algebra
+        </p>
+      </div>
+
+      <!-- View More Seperator -->
+      <div class="view-more">
+        <a onclick="document.querySelector('.projects').scrollIntoView();"
+          >vv Projects vv</a
+        >
+      </div>
+
+      <!-- Projects -->
+      <h3 class="projects">Projects</h3>
+      <div class="project-container">
+        <div class="project-bar">
+          <img
+            class="project-arrow"
+            src="/img/Triangle.svg"
+            alt="drop down arrow"
+            width="30"
+            height="30"
+          />
+          <!-- TODO get arrow icon -->
+
+          <h4>Asteroids with Quadtrees</h4>
+
+          <div class="tags">
+            <h5>C++</h5>
+            <h5>olc::PGE</h5>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <!-- Slideshow -->
+          <div class="slideshow">
+            <figure class="slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU"
+              />
+              <figcaption>Caption</figcaption>
+            </figure>
+            <figure class="slide">
+              <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+              <figcaption>Caption</figcaption>
+            </figure>
+
+            <a
+              class="prev"
+              onclick="e => nextSlide(e.currentTarget.parentElement)"
+              >&#10094;</a
+            >
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          </div>
+
+          <div class="description">
+            <div class="description-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="Github logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
+                  alt="WebGL logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+            </div>
             <p>
-                Bio
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum mi. Maecenas augue mi, aliquam
-                vitae tristique nec, fringilla ut eros. Mauris auctor faucibus augue, et facilisis ipsum luctus at.
-                Fusce eget hendrerit arcu, ut efficitur massa. Nullam facilisis sed felis at auctor. Cras ac mi ligula.
-                Aenean tincidunt lacus non sapien varius, a tempus erat mattis. Nunc in mauris sollicitudin, mattis
-                lacus quis, aliquet neque. Curabitur sed nisl quis ante fermentum posuere. Proin vel gravida elit, non
-                gravida elit.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+              dictum mi. Maecenas augue mi, aliquam vitae tristique nec,
+              fringilla ut eros. Mauris auctor faucibus augue, et facilisis
+              ipsum luctus at. Fusce eget hendrerit arcu, ut efficitur massa.
+              Nullam facilisis sed felis at auctor. Cras ac mi ligula.
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-bar">
+          <img
+            class="project-arrow"
+            src="/img/Triangle.svg"
+            alt="drop down arrow"
+            width="30"
+            height="30"
+          />
+
+          <h4>Portfolio Website</h4>
+
+          <div class="tags">
+            <h5>HTML</h5>
+            <h5>CSS</h5>
+            <h5>JavaScript</h5>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <!-- Slideshow -->
+          <div class="slideshow">
+            <figure class="slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU"
+              />
+              <figcaption>Caption</figcaption>
+            </figure>
+            <figure class="slide">
+              <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+              <figcaption>Caption</figcaption>
+            </figure>
+
+            <a class="prev" onclick="nextSlide()">&#10094;</a>
+            <a class="next" onclick="prevSlide(this.parent)">&#10095;</a>
+          </div>
+
+          <div class="description">
+            <div class="description-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="Github logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
+                  alt="WebGL logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+            </div>
             <p>
-                Classes/Experience
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum mi. Maecenas augue mi, aliquam
-                vitae tristique nec, fringilla ut eros. Mauris auctor faucibus augue, et facilisis ipsum luctus at.
-                Fusce eget hendrerit arcu, ut efficitur massa. Nullam facilisis sed felis at auctor. Cras ac mi ligula.
-                Aenean tincidunt lacus non sapien varius, a tempus erat mattis. Nunc in mauris sollicitudin, mattis
-                lacus quis, aliquet neque. Curabitur sed nisl quis ante fermentum posuere. Proin vel gravida elit, non
-                gravida elit.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+              dictum mi. Maecenas augue mi, aliquam vitae tristique nec,
+              fringilla ut eros. Mauris auctor faucibus augue, et facilisis
+              ipsum luctus at. Fusce eget hendrerit arcu, ut efficitur massa.
+              Nullam facilisis sed felis at auctor. Cras ac mi ligula.
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-bar">
+          <img
+            class="project-arrow"
+            src="/img/Triangle.svg"
+            alt="drop down arrow"
+            width="30"
+            height="30"
+          />
+
+          <h4>Unity Tabletop Tanks Game</h4>
+
+          <div class="tags">
+            <h5>C#</h5>
+            <h5>Unity</h5>
+            <h5>AI</h5>
+          </div>
         </div>
 
-        <!-- View More Seperator -->
-        <div class="view-more">
-            <a onclick="document.querySelector('.projects').scrollIntoView();">vv Projects vv</a>>
-        </div>
-
-        <!-- Projects -->
-        <h3 class="projects">Projects</h3>
-        <div class="project-container">
-            <div class="project-bar">
-
-                <img class="project-arrow"
-                    src="https://cdn.iconscout.com/icon/free/png-256/back-arrow-1767523-1502427.png"
-                    alt="drop down arrow" width="50" height="50">
-                <!-- TODO get arrow icon -->
-
-
-                <h4>Asteroids with Quadtrees</h4>
-
-                <div class="tags">
-                    <h5>C++</h5>
-                    <h5>olc::PGE</h5>
-                </div>
-
-            </div>
-
-            <div class="project-content">
-                <!-- Slideshow -->
-                <div class="slideshow">
-
-                    <figure class="slide">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU">
-                        <figcaption>Caption</figcaption>
-                    </figure>
-                    <figure class="slide">
-                        <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
+        <div class="project-content">
+          <!-- Slideshow -->
+          <div class="slideshow">
+            <figure class="slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU"
+              />
+              <figcaption>Caption</figcaption>
+            </figure>
+            <figure class="slide">
+              <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <figcaption>Caption</figcaption>
-                    </figure>
+                            allowfullscreen></iframe> -->
+              <figcaption>Caption</figcaption>
+            </figure>
 
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          </div>
 
-                <div class="description">
-                    <div class="description-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button"
-                                width="50" height="50">
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
-                                alt="WebGL logo button" width="50" height="50">
-                        </a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum mi. Maecenas augue mi,
-                        aliquam vitae tristique nec, fringilla ut eros. Mauris auctor faucibus augue, et facilisis ipsum
-                        luctus at. Fusce eget hendrerit arcu, ut efficitur massa. Nullam facilisis sed felis at auctor.
-                        Cras ac mi ligula.</p>
-                </div>
+          <div class="description">
+            <div class="description-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="Github logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
+                  alt="WebGL logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
             </div>
+            <p>
+              This tank game prototype was used for my AI Programming final and
+              based on the Wii Play Tanks Minigame. This prototype shows off the
+              basic mechanics of the game and collision, including movement,
+              shooting, bullet ricochet, enemy radar, and homing missile
+              bullets. All bullets are also enabled and disabled using Object
+              Pooling.
+            </p>
+          </div>
         </div>
-        <div class="project-container">
-            <div class="project-bar">
+      </div>
+      <div class="project-container">
+        <div class="project-bar">
+          <img
+            class="project-arrow"
+            src="/img/Triangle.svg"
+            alt="drop down arrow"
+            width="30"
+            height="30"
+          />
 
-                <img class="project-arrow"
-                    src="https://cdn.iconscout.com/icon/free/png-256/back-arrow-1767523-1502427.png"
-                    alt="drop down arrow" width="50" height="50">
-                <!-- TODO get arrow icon -->
+          <h4>Hardcore Pizza Delivery</h4>
 
+          <div class="tags">
+            <h5>C++</h5>
+            <h5>Unreal Engine</h5>
+            <h5>Team</h5>
+          </div>
+        </div>
 
-                <h4>Portfolio Website</h4>
-
-                <div class="tags">
-                    <h5>HTML</h5>
-                    <h5>CSS</h5>
-                    <h5>JavaScript</h5>
-                </div>
-
-            </div>
-
-            <div class="project-content">
-                <!-- Slideshow -->
-                <div class="slideshow">
-
-                    <figure class="slide">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU">
-                        <figcaption>Caption</figcaption>
-                    </figure>
-                    <figure class="slide">
-                        <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
+        <div class="project-content">
+          <!-- Slideshow -->
+          <div class="slideshow">
+            <figure class="slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU"
+              />
+              <figcaption>Caption</figcaption>
+            </figure>
+            <figure class="slide">
+              <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <figcaption>Caption</figcaption>
-                    </figure>
+                            allowfullscreen></iframe> -->
+              <figcaption>Caption</figcaption>
+            </figure>
 
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          </div>
 
-                <div class="description">
-                    <div class="description-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button"
-                                width="50" height="50">
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
-                                alt="WebGL logo button" width="50" height="50">
-                        </a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum mi. Maecenas augue mi,
-                        aliquam vitae tristique nec, fringilla ut eros. Mauris auctor faucibus augue, et facilisis ipsum
-                        luctus at. Fusce eget hendrerit arcu, ut efficitur massa. Nullam facilisis sed felis at auctor.
-                        Cras ac mi ligula.</p>
-                </div>
+          <div class="description">
+            <div class="description-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="Github logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
+                  alt="Releases button"
+                  width="50"
+                  height="50"
+                />
+              </a>
             </div>
+            <p>
+              In Hardcore Pizza Delivery, the player has to deliver pizza while
+              swinging around various environments. This project is made with a
+              mix of Unreal Engine 4’s blueprint system and C++. Checkpoint and
+              Out of Bounds System The goal in making this checkpoint system was
+              to: Keep a previous point for the player to respawn back to Check
+              if the player has fallen out of the world Start/Stop the level
+              speedrunning timer Easy for the designers to integrate into their
+              levels The system is built around a Checkpoint Manager that keeps
+              track of all the Checkpoint Trigger blueprints and displays
+              information like the last checkpoint the player has been hit.
+              Raycast Grapple Component One of the first things I worked on for
+              this project was to create the grapple component that Would attach
+              to the object the player was looking at if it was in reach Attach
+              the ends of the grapple to the object and the player. In this
+              video, we were using Unreal’s Cable Component but later switched
+              to a custom mesh. Since the code was reusable, most of the class
+              was not affected by this update.
+            </p>
+          </div>
         </div>
-        <div class="project-container">
-            <div class="project-bar">
-
-                <img class="project-arrow"
-                    src="https://cdn.iconscout.com/icon/free/png-256/back-arrow-1767523-1502427.png"
-                    alt="drop down arrow" width="50" height="50">
-                <!-- TODO get arrow icon -->
-
-
-                <h4>Unity Tabletop Tanks Game</h4>
-
-                <div class="tags">
-                    <h5>C#</h5>
-                    <h5>Unity</h5>
-                    <h5>AI</h5>
-                </div>
-
-            </div>
-
-            <div class="project-content">
-                <!-- Slideshow -->
-                <div class="slideshow">
-
-                    <figure class="slide">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU">
-                        <figcaption>Caption</figcaption>
-                    </figure>
-                    <figure class="slide">
-                        <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <figcaption>Caption</figcaption>
-                    </figure>
-
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                </div>
-
-                <div class="description">
-                    <div class="description-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button"
-                                width="50" height="50">
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
-                                alt="WebGL logo button" width="50" height="50">
-                        </a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum mi. Maecenas augue mi,
-                        aliquam vitae tristique nec, fringilla ut eros. Mauris auctor faucibus augue, et facilisis ipsum
-                        luctus at. Fusce eget hendrerit arcu, ut efficitur massa. Nullam facilisis sed felis at auctor.
-                        Cras ac mi ligula.</p>
-                </div>
-            </div>
-        </div>
-        <div class="project-container">
-            <div class="project-bar">
-
-                <img class="project-arrow"
-                    src="https://cdn.iconscout.com/icon/free/png-256/back-arrow-1767523-1502427.png"
-                    alt="drop down arrow" width="50" height="50">
-                <!-- TODO get arrow icon -->
-
-
-                <h4>Hardcore Pizza Delivery</h4>
-
-                <div class="tags">
-                    <h5>C++</h5>
-                    <h5>Unreal Engine</h5>
-                </div>
-
-            </div>
-
-            <div class="project-content">
-                <!-- Slideshow -->
-                <div class="slideshow">
-
-                    <figure class="slide">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7LvtrkNyEI2aTssGxfAF3MM24I2DHLFrUw&usqp=CAU">
-                        <figcaption>Caption</figcaption>
-                    </figure>
-                    <figure class="slide">
-                        <iframe width="320" height="180" src="https://www.youtube.com/embed/-045Ykvdxnw"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <figcaption>Caption</figcaption>
-                    </figure>
-
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                </div>
-
-                <div class="description">
-                    <div class="description-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button"
-                                width="50" height="50">
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
-                                alt="WebGL logo button" width="50" height="50">
-                        </a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum mi. Maecenas augue mi,
-                        aliquam vitae tristique nec, fringilla ut eros. Mauris auctor faucibus augue, et facilisis ipsum
-                        luctus at. Fusce eget hendrerit arcu, ut efficitur massa. Nullam facilisis sed felis at auctor.
-                        Cras ac mi ligula.</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <nav>
-            <div class="footer-title">
-                <a href="/docs/index.html">Sam Hirsch</a>
-            </div>
-            <ul>
-                <li>
-                    <a href="/files/SamuelHirsch_GameProgrammerResume.pdf" target="_blank"
-                        rel="noopener noreferrer">Resume</a>
-                </li>
-                <li>
-                    <a href="https://github.com/BaseDorp" target="_blank" rel="noopener noreferrer">Github</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/samhirschdev/" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a>
-                </li>
-                <li>
-                    <a>Email</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="footer-title">
+          <a>samhirsch.dev@gmail.com</a>
+          <button>copy</button>
+        </div>
+        <a
+          href="/files/SamuelHirsch_GameProgrammerResume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Resume</a
+        >
+
+        <a
+          href="https://github.com/BaseDorp"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Github</a
+        >
+
+        <a
+          href="https://www.linkedin.com/in/samhirschdev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </nav>
     </footer>
-
-    <!-- Side Bar -->
-    <aside>
-        <!-- <button><a>SH</a></button> -->
-
-    </aside>
-
-</body>
-
+  </body>
 </html>
+<!-- ============== TODO ==============
+    - fix slideshow from affecting all slideshows
+    - style footer
+    - fix styling for about section
+    - fix the view more from clipping into projects
+    - make email in footer with a copy button
+    - make responsive for mobile
+    - add about text
+    - Fill in details about projects
+    - See if you can make project slideshows bigger
+    - attach next/prev arrows and caption depending on slide size
+    - get site header logo
+    - get better profile picture
+    - fix file path issues
+ -->
