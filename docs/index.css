@@ -237,7 +237,6 @@ nav a {
   position: relative;
   display: flex;
   justify-content: center;
-  float: left;
 }
 
 .slide {
@@ -306,7 +305,7 @@ nav a {
 
 /* --------------- 'View More' text --------------- */
 .view-more {
-  /* margin-top: 2vh; */
+  margin-top: 2vh;
   display: flex;
   justify-content: center;
   cursor: pointer;
