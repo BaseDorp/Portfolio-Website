@@ -1,308 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/docs/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/docs/index.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="/docs/collaspe-item.js" defer></script>
+    <script type="text/javascript" src="/docs/slideshow.js" defer></script>
+    <script type="text/javascript" src="/docs/copy-text.js" defer></script>
+    <script type="text/javascript" src="/docs/side-bar.js" defer></script>
 
-  <script type="text/javascript" src="/docs/collaspe-item.js" defer></script>
-  <script type="text/javascript" src="/docs/slideshow.js" defer></script>
-  <script type="text/javascript" src="/docs/copy-text.js" defer></script>
-  <script type="text/javascript" src="/docs/side-bar.js" defer></script>
+    <title>Sam Hirsch Portfolio</title>
+    <link rel="icon" href="/img/Website_Icon3.png" type="image/x-icon" />
+  </head>
 
-  <title>Sam Hirsch Portfolio</title>
-  <link rel="icon" href="/img/Website_Icon3.png" type="image/x-icon" />
-</head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="background-image"></div>
+      <!-- Nagivation Bar -->
+      <nav>
+        <div class="header-title">
+          <h1>Sam Hirsch</h1>
+          <button class="side-panel-button" onclick="openNav()">&#9776;</button>
+        </div>
 
-<body>
-  <!-- Header -->
-  <header>
-    <div class="background-image"></div>
-    <!-- Nagivation Bar -->
-    <nav>
-      <div class="header-title">
-        <h1>Sam Hirsch</h1>
-        <button class="side-panel-button" onclick="openNav()">&#9776;</button>
+        <div class="header-links" id="side-panel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a
+            href="/files/SamuelHirsch_GameProgrammerResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume</a
+          >
+          <a
+            href="https://github.com/BaseDorp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+          <a
+            href="https://www.linkedin.com/in/samhirschdev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a onclick="copy()">Email</a>
+        </div>
+      </nav>
+
+      <!-- Profile -->
+      <div class="profile">
+        <!-- <video></video> Background Video -->
+        <img
+          src="/img/2019NewYearPortrait.jpg"
+          alt="Portait Picture"
+          width="360"
+          height="480"
+        />
+        <div class="profile-text">
+          <h1>Software Engineer</h1>
+          <!-- <h2>*Insert Quote*</h2> -->
+        </div>
       </div>
-
-      <div class="header-links" id="side-panel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <a href="/files/SamuelHirsch_GameProgrammerResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-
-        <a href="https://github.com/BaseDorp" target="_blank" rel="noopener noreferrer">Github</a>
-
-        <a href="https://www.linkedin.com/in/samhirschdev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-
-        <a onclick="copy()">Email</a>
-      </div>
-    </nav>
-
-    <!-- Profile -->
-    <div class="profile">
-      <!-- <video></video> Background Video -->
-      <img src="/img/2019NewYearPortrait.jpg" alt="Portait Picture" width="360" height="480" />
-      <div class="profile-text">
-        <h1>Software Engineer</h1>
-        <!-- <h2>*Insert Quote*</h2> -->
-      </div>
-    </div>
-  </header>
-
-  <!-- View More Seperator -->
-  <div class="view-more">
-    <a onclick="document.querySelector('main').scrollIntoView();">vv View More vv</a>
-  </div>
-
-  <main>
-    <!-- About -->
-    <h3>About Me</h3>
-    <div class="about">
-      <p>
-        My name is Sam Hirsch and I am a recent graduate from Columbia College
-        Chicago. My major is a Bachelor’s of Science in Programming with a
-        minor in Video Game Art. I have been interested in video games ever
-        since I started to create my own games in Minecraft using command
-        blocks. But I realized the limitations and decided to start teaching
-        myself Unreal Engine and C++. I found an interest in technology in
-        high school becoming part of the student computer maintenance team and
-        an editor for a school news broadcast at my high school. My goal is to
-        make an experience that is fun and immersive that players will enjoy
-        playing.
-      </p>
-      <p>
-        Classes/Experience Game Studio 1 & 2 Game Programming 1 & 2 C++
-        Programming 1 & 2 Object Orientated Programming 1 & 2 Graphics
-        Application Programming AI Programming Algorithms Linear Algebra Game
-        Studio 1 & 2 Game Programming 1 & 2 C++ Programming 1 & 2 Object
-        Orientated Programming 1 & 2 Graphics Application Programming AI
-        Programming Algorithms Linear Algebra
-      </p>
-    </div>
+    </header>
 
     <!-- View More Seperator -->
     <div class="view-more">
-      <a onclick="document.querySelector('.projects').scrollIntoView();">vv Projects vv</a>
+      <a onclick="document.querySelector('main').scrollIntoView();"
+        >vv View More vv</a
+      >
     </div>
 
-    <!-- Projects -->
-    <h3 class="projects">Projects</h3>
-    <div class="project-container">
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-        <!-- TODO get arrow icon -->
-
-        <h4>Asteroids with Quadtrees</h4>
-
-        <div class="tags">
-          <h5>C++</h5>
-          <h5>olc::PGE</h5>
+    <main>
+      <!-- About -->
+      <h3>About Me</h3>
+      <div class="about">
+        <p>
+          My name is Sam Hirsch and I am a graduate from Columbia College
+          Chicago. My major is a Bachelor’s of Science in Programming with a
+          minor in Video Game Art. I have been interested in programming ever
+          since I started to create my own games in Minecraft using command
+          blocks. But I realized the limitations and decided to start teaching
+          myself Unreal Engine and C++. I found an interest in technology in
+          high school becoming part of the student computer maintenance team and
+          an editor for a school news broadcast at my high school.
+        </p>
+        <div class="about-classes">
+          <h4>Relavent Classes:</h4> <!-- TODO make this its own element, prob need to just <p class="">-->
+          <ul>
+            <li>Capstone Game Studio 1 & 2</li>
+            <li>C++ 1 & 2</li>
+            <li>Object Orientated Programming 1 & 2</li>
+            <li>Game Programming 1 & 2</li>
+            <li>Graphics Application Programming</li>
+            <li>AI Programming</li>
+            <li>Algorithms</li>
+            <li>Linear Algebra</li>
+          </ul>
         </div>
       </div>
 
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-045Ykvdxnw"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </figure>
-        </div>
+      <!-- View More Seperator -->
+      <div class="view-more">
+        <a onclick="document.querySelector('.projects').scrollIntoView();"
+          >vv Projects vv</a
+        >
+      </div>
 
-        <div class="description">
-          <div class="description-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
+      <!-- Projects -->
+      <h3 class="projects">Projects</h3>
+      <div class="project-container">
+        <div class="project-bar">
+          <img
+            class="project-arrow"
+            src="/img/Triangle.svg"
+            alt="drop down arrow"
+            width="30"
+            height="30"
+          />
+
+          <h4>Asteroids with Quadtrees</h4>
+
+          <div class="tags">
+            <h5>C++</h5>
+            <h5>olc::PGE</h5>
           </div>
-          <p>
-            This is a rereation of the Asteroids arcade game I made in the olc::PixelGameEngine. I did this project
-            because I wanted to become more familiar with how collision detection works between simple objects. This
-            game also handles all of the collision checking through Quadtrees.
-            When more than 'x' amount of
-            objects get put into that quadtree, the quadtree subdivides into 4 equally divided sub-quadtrees. This
-            happens recursively until all objects are placed into a quadtree.
-            <br>
-            Now that all the objects are inside a bounding box, I only have to do collision checks between objects in
-            that bounding box, and not with any of the other objects in the scene.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-container">
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-
-        <h4>Portfolio Website</h4>
-
-        <div class="tags">
-          <h5>HTML</h5>
-          <h5>CSS</h5>
-          <h5>JavaScript</h5>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="slideshow">
-
-          <figure class="slide">
-            <img src="/img/WebsiteHeroPage.jpeg" alt="Image of this website's hero page." width="480" height="360">
-            <figcaption>Caption</figcaption>
-          </figure>
         </div>
 
-        <div class="description">
-          <div class="description-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg" alt="WebGL logo button"
-                width="50" height="50" />
-            </a>
+        <div class="project-content">
+          <!-- Slideshow -->
+          <div class="slideshow">
+            <figure class="slide">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/-045Ykvdxnw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </figure>
           </div>
-          <p>
-            This website was actually made by myself, using HTML, CSS, and JavaScript. This whole project was a way to
-            step away from OOP languages and teach myself front end web development.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
 
-        <h4>Unity Tabletop Tanks Game</h4>
-
-        <div class="tags">
-          <h5>C#</h5>
-          <h5>Unity</h5>
-          <h5>AI</h5>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aeH1vH9dCbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </figure>
-        </div>
-
-        <div class="description">
-          <div class="description-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg" alt="WebGL logo button"
-                width="50" height="50" />
-            </a>
+          <div class="description">
+            <div class="description-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="Github logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+            </div>
+            <p>
+              This is a recreation of the Asteroids arcade game I made in the
+              olc::PixelGameEngine. I did this project because I wanted to
+              become more familiar with how collision detection works between
+              simple objects. This game also handles all of the collision
+              checking through Quadtrees. When more than 'x' amount of objects
+              get put into that quadtree, the quadtree subdivides into 4 equally
+              divided sub-quadtrees. This happens recursively until all objects
+              are placed into a quadtree.
+              <br />
+              Now that all the objects are inside a bounding box, I only have to
+              do collision checks between objects in that bounding box, and not
+              with any of the other objects in the scene.
+            </p>
           </div>
-          <p>
-            This is a tabletop style tank game, based off the Wii Play Tanks game, that I made for my AI Programming
-            final and have added onto it after graduating. This prototype shows off the
-            basic mechanics of the game and collision, including movement,
-            shooting, bullet ricochet, enemy radar, and homing missile
-            bullets. All bullets are also enabled and disabled using Object
-            Pooling.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-
-        <h4>Hardcore Pizza Delivery</h4>
-
-        <div class="tags">
-          <h5>C++</h5>
-          <h5>Unreal Engine</h5>
-          <h5>Team</h5>
         </div>
       </div>
 
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <img src="/img/HCPDMenuScreenshot.PNG" height="315" width="560" alt="game main menu image">
-            <figcaption>Main Menu</figcaption>
-          </figure>
+      <div class="project-container">
+        <div class="project-bar">
+          <img
+            class="project-arrow"
+            src="/img/Triangle.svg"
+            alt="drop down arrow"
+            width="30"
+            height="30"
+          />
 
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WMkVaMJYpKM"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </figure>
+          <h4>Portfolio Website</h4>
 
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/B6HCUprDkls"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </figure>
-
-          <a class="prev">&#10094;</a>
-          <a class="next">&#10095;</a>
-        </div>
-
-        <div class="description">
-          <div class="description-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
+          <div class="tags">
+            <h5>HTML</h5>
+            <h5>CSS</h5>
+            <h5>JavaScript</h5>
           </div>
-          <p>
-            In Hardcore Pizza Delivery, the player has to deliver pizza while
-            swinging around various environments. This project is made with a
-            mix of Unreal Engine 4’s blueprint system and C++. On this project I worked as a general programmer and
-            helped the artists with stuff like materials and blueprints.
-          </p>
+        </div>
+
+        <div class="project-content">
+          <!-- Slideshow -->
+          <div class="slideshow">
+            <figure class="slide">
+              <img
+                src="/img/WebsiteHeroPage.jpeg"
+                alt="Image of this website's hero page."
+                width="480"
+                height="360"
+              />
+              <figcaption>Caption</figcaption>
+            </figure>
+          </div>
+
+          <div class="description">
+            <div class="description-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="Github logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
+                  alt="WebGL logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+            </div>
+            <p>
+              This website was actually made by myself, using HTML, CSS, and
+              JavaScript. This whole project was a way to step away from OOP
+              languages and teach myself front end web development.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+      <div class="project-container">
+        <div class="project-bar">
+          <img
+            class="project-arrow"
+            src="/img/Triangle.svg"
+            alt="drop down arrow"
+            width="30"
+            height="30"
+          />
 
-  <!-- Footer -->
-  <footer>
-    <nav>
-      <div class="footer-title">
-        <a onclick="copy()">samhirsch.dev@gmail.com</a>
-        <button onclick="copy()">copy</button>
+          <h4>Unity Tabletop Tanks Game</h4>
+
+          <div class="tags">
+            <h5>C#</h5>
+            <h5>Unity</h5>
+            <h5>AI</h5>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <!-- Slideshow -->
+          <div class="slideshow">
+            <figure class="slide">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/aeH1vH9dCbE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </figure>
+          </div>
+
+          <div class="description">
+            <div class="description-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="Github logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
+                  alt="WebGL logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+            </div>
+            <p>
+              This is a tabletop style tank game, based off the Wii Play Tanks
+              game, that I made for my AI Programming final and have added onto
+              it after graduating. This prototype shows off the basic mechanics
+              of the game and collision, including movement, shooting, bullet
+              ricochet, enemy radar, and homing missile bullets. All bullets are
+              also enabled and disabled using Object Pooling.
+            </p>
+          </div>
+        </div>
       </div>
-      <a href="/files/SamuelHirsch_GameProgrammerResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <div class="project-container">
+        <div class="project-bar">
+          <img
+            class="project-arrow"
+            src="/img/Triangle.svg"
+            alt="drop down arrow"
+            width="30"
+            height="30"
+          />
 
-      <a href="https://github.com/BaseDorp" target="_blank" rel="noopener noreferrer">Github</a>
+          <h4>Hardcore Pizza Delivery</h4>
 
-      <a href="https://www.linkedin.com/in/samhirschdev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </nav>
-  </footer>
-</body>
+          <div class="tags">
+            <h5>C++</h5>
+            <h5>Unreal Engine</h5>
+            <h5>Team</h5>
+          </div>
+        </div>
 
+        <div class="project-content">
+          <!-- Slideshow -->
+          <div class="slideshow">
+            <figure class="slide">
+              <img
+                src="/img/HCPDMenuScreenshot.PNG"
+                height="315"
+                width="560"
+                alt="game main menu image"
+              />
+              <figcaption>Main Menu</figcaption>
+            </figure>
+
+            <figure class="slide">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/WMkVaMJYpKM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </figure>
+
+            <figure class="slide">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/B6HCUprDkls"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </figure>
+
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+
+          <div class="description">
+            <div class="description-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="Github logo button"
+                  width="50"
+                  height="50"
+                />
+              </a>
+            </div>
+            <p>
+              In Hardcore Pizza Delivery, the player has to deliver pizza while
+              swinging around various environments. This project is made with a
+              mix of Unreal Engine 4’s blueprint system and C++. On this project
+              I worked as a general programmer and helped the artists with stuff
+              like materials and blueprints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="footer-title">
+          <a onclick="copy()">samhirsch.dev@gmail.com</a>
+          <button onclick="copy()">copy</button>
+        </div>
+        <a
+          href="/files/SamuelHirsch_GameProgrammerResume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Resume</a
+        >
+
+        <a
+          href="https://github.com/BaseDorp"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Github</a
+        >
+
+        <a
+          href="https://www.linkedin.com/in/samhirschdev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </nav>
+    </footer>
+  </body>
 </html>
 <!-- ============== TODO ==============
-    - fix slideshow from affecting all slideshows
-    - fix styling for about section
     - fix the view more from clipping into projects
     - add about text
     - See if you can make project slideshows bigger
     - attach next/prev arrows and caption depending on slide size
-    - get site header logo
-    - fix file path issues
  -->
