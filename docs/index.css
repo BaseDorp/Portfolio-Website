@@ -53,6 +53,8 @@ h3 {
 }
 
 p {
+  font-family: sans-serif;
+  
   color: white;
   font-size: 18px;
   word-wrap: break-word;
@@ -173,6 +175,10 @@ nav a {
   font-size: 25px;
   line-height: 25px;
   margin: 30px;
+}
+
+.about li p{
+  margin: 0px;
 }
 
 /* ------------------- Projects ------------------- */
@@ -397,6 +403,7 @@ footer a {
   }
 
   .profile img {
+
   }
 
   /* ----- Background Image ------- */
@@ -412,12 +419,14 @@ footer a {
 
   .about {
     display: grid;
+    font-size: 20px;
   }
 
   .about p {
     margin: 10px auto;
     width: 90%;
     height: 50%;
+    font-size: 20px;
   }
 
   /* ----- Projects ------- */
