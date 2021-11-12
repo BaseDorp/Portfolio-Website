@@ -133,6 +133,7 @@ nav a {
 .profile-text {
   display: grid;
   align-items: center;
+  width: 40%;
 }
 
 .profile-text h1 {
@@ -165,9 +166,17 @@ nav a {
   color: white;
 }
 
-.about-classes{
-  width: 50%;
-  margin:30px;
+.about-highlights{
+  width: 35%;
+  margin: 30px;
+}
+
+.about li{
+  list-style: none;
+}
+
+.about-classes li{
+  list-style-type:circle;
 }
 
 .about p {
