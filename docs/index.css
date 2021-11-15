@@ -38,7 +38,8 @@ h3 {
   -webkit-text-stroke-color: darkslateblue;
 }
 
-div, button{
+div,
+button {
   border-radius: 15px;
 }
 
@@ -62,7 +63,6 @@ p {
 
   color: white;
   font-size: 18px;
-  /* word-wrap: break-word; */
 }
 
 @keyframes hover-move {
@@ -87,6 +87,7 @@ header {
   z-index: -1;
   width: 100%;
   opacity: 50%;
+  border-radius: 0px;
 }
 
 header nav {
@@ -150,20 +151,38 @@ nav a {
   text-align: center;
 }
 
-.profile-text h2 {
+.profile h4 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+/* .profile-text h2 {
   background-color: rgba(196, 196, 196, 0.5);
   padding: 30px;
   border-radius: 20px;
 
   text-align: center;
+} */
+
+.profile-text span {
+  background-color: rgba(196, 196, 196, 0.5);
+  padding: 2px;
+  text-decoration: none;
+  color: rgba(178, 177, 241, 1);
+  border-radius: 5px;
+  font-weight: 700;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: darkslateblue;
 }
 
 /* ------------------- About ------------------- */
 .about {
   background-color: rgba(49, 69, 99, 1);
   border: 3px solid black;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
   min-height: 80vh;
 
   font-size: 25px;
@@ -172,21 +191,33 @@ nav a {
 }
 
 .about-highlights {
-  width: 35%;
+  width: 80%;
   margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.highlight {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-points {
+  display: grid;
 }
 
 .about li {
   list-style: none;
+  font-size: 15px;
+  margin: 0 auto;
 }
 
-.about-classes li {
+.about li {
   list-style-type: circle;
   overflow: visible;
 }
 
 .about p {
-  width: 50%;
   font-size: 25px;
   line-height: 25px;
   margin: 30px;
