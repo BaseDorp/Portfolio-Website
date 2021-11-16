@@ -190,6 +190,10 @@ nav a {
   color: white;
 }
 
+.about h4{
+  margin: 0px 20px;
+}
+
 .about-highlights {
   width: 80%;
   margin: 30px;
@@ -200,6 +204,10 @@ nav a {
 .highlight {
   display: flex;
   justify-content: space-evenly;
+}
+
+.highlight header{
+  display: grid;
 }
 
 .about-points {
