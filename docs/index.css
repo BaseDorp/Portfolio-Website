@@ -10,6 +10,7 @@ body {
   margin: auto;
   background-color: rgba(38, 42, 48, 1);
   scrollbar-width: none; /* Firefox */
+  width: 100vw;
 }
 
 body::-webkit-scrollbar /* Chrome/Safari/Opera */ {
@@ -96,15 +97,6 @@ header nav {
   padding: 5px 20px;
 }
 
-/* .header-title button{
-  display: none;
-} */
-
-/* .header-links {
-  display: flex;
-  display: right;
-} */
-
 .header-links a:hover {
   animation: hover-move 0.8s forwards;
 }
@@ -145,7 +137,7 @@ nav a {
 
 .profile-text {
   display: grid;
-  align-items: center;
+  align-content: center;
   width: 40%;
 }
 
@@ -395,6 +387,7 @@ footer a {
 
 /* --------------- Media Queries --------------- */
 @media screen and (max-width: 850px) {
+  
   main {
     width: 90%;
   }
@@ -447,10 +440,14 @@ footer a {
 
   /* ----- Profile ------- */
   .profile {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
     width: 100%;
+  }
+
+  .profile-text{
+    width: 90%;
   }
 
   .profile h4 {
@@ -462,6 +459,7 @@ footer a {
 
   /* ----- Background Image ------- */
   .background-image {
+    
   }
 
   /* ----- About ------- */
