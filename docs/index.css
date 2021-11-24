@@ -342,8 +342,6 @@ nav a {
 .description {
   display: grid;
   align-items: center;
-  /* width: 55%; */
-  /* border: 2px solid red; */
 }
 
 .description-links {
@@ -355,8 +353,17 @@ nav a {
 }
 
 .description p {
-  /* border: 2px solid red; */
   margin: 0px 25px;
+}
+
+.description p a{
+  text-decoration:underline;
+  color: white;
+  padding: 2px;
+
+  font-size: 18px;
+  font-weight: normal;
+  -webkit-text-stroke: 0px;
 }
 
 /* --------------- 'View More' text --------------- */
