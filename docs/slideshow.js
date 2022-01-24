@@ -27,6 +27,7 @@ document.querySelectorAll(".slideshow").forEach((slideshow)=>{
 
     if (slides.length > 1) {
     IncrementSlideIndex(1); // This automatically sets the first slide
+    
     // Bind click actions.
     slideshow.querySelector(".prev").addEventListener("click", () => { IncrementSlideIndex(-1); });
     slideshow.querySelector(".next").addEventListener("click", () => { IncrementSlideIndex(1); });

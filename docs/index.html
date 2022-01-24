@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/docs/index.css" />
+  <link rel="stylesheet" href="/docs/media-queries.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap" rel="stylesheet" />
@@ -21,10 +22,10 @@
 
 <body>
 
-  <div class="notification">
+  <!-- <div class="notification">
     <p>Note: This website is currently still in development. If you find any bugs/errors or have any suggestions, I'd
       love to hear them at samhirsch.dev@gmail.com</p>
-  </div>
+  </div> -->
 
   <!-- Header -->
   <header>
@@ -72,27 +73,26 @@
           <div class="highlight">
             <img src="https://cdn-icons-png.flaticon.com/512/49/49944.png" alt="Graduation Cap Image" width="100px"
               height="100px">
-            <h4>Graduated with a B.S. in Programming</h4>
+            <h4>Graduated with a B.S. in Interactive Media Programming</h4>
           </div>
           <div class="highlight">
             <img src="https://static.itch.io/images/itchio-textless-black.svg" alt="itch.io icon" width="100px"
               height="100px">
-            <h4>Teamwork Experience Through Game Jams</h4>
+            <h4>Experience on Team Projects through Game Jams and School Projects</h4>
           </div>
-          <!-- <div class="highlight">
-            <img src="" alt="">
-            <h4>Languages</h4>
-          </div> -->
         </div>
-        <div class="grid-highlights">
+        <!-- <div class="grid-highlights">
           <div class="highlight">
             <img src="https://cdn-icons-png.flaticon.com/512/4088/4088702.png" alt="book icon" width="90px"
               height="90px">
             <h4>Relavent Classes:</h4>
           </div>
-          <ul>
+          <ul> 
             <li>
-              Capstone Game Studio 1 & 2
+              Game Studio 1 & 2 (Capstone)
+            </li>
+            <li>
+              Object Oriented Programming 1 & 2 (C#)
             </li>
             <li>
               C++ 1 & 2
@@ -103,6 +103,7 @@
             <li>
               Graphics Application Programming
             </li>
+            <li>Web Developement</li>
             <li>
               AI Programming
             </li>
@@ -113,7 +114,7 @@
               Linear Algebra
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -124,6 +125,92 @@
 
     <!-- Projects -->
     <h3 class="projects">Projects</h3>
+    <div class="project-container">
+      <div class="project-bar">
+        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
+
+        <h4>Unity Tabletop Tanks Game</h4>
+
+        <div class="tags">
+          <h5>C#</h5>
+          <h5>Unity</h5>
+          <h5>AI</h5>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <!-- Slideshow -->
+        <div class="slideshow">
+          <figure class="slide">
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6889116705612726272?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </figure>
+
+          <figure class="slide">
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6838678841574203392?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </figure>
+
+          <figure class="slide">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aeH1vH9dCbE"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </figure>
+
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
+        </div>
+
+        <div class="description">
+          <div class="description-links">
+            <a href="https://github.com/BaseDorp/TankGame" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
+                height="50" />
+            </a>
+          </div>
+          <p>
+            This is a tabletop style tank game, based on the Wii Play Tanks game, that I made for my AI Programming final and have come back to refactored post-graduation. The first video highlights how the enemy Ai tank reacts to multiple players it can go to. If would like to read more about it I posted a dev log on <a href="https://www.linkedin.com/posts/samhirschdev_progress-update-on-what-i-have-been-working-activity-6838680661759533056-MDjf" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+          </p>
+          <br>
+          <p>
+            The second video is from an earlier part in the development stage so some of it is outdated. The video does show off the basic mechanics including movement, shooting, bullet ricochet, and it is not shown in the video but all the bullets are enabled/disabled through object pooling.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="project-container">
+      <div class="project-bar">
+        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
+
+        <h4>Portfolio Website</h4>
+
+        <div class="tags">
+          <h5>HTML</h5>
+          <h5>CSS</h5>
+          <h5>JavaScript</h5>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <!-- Slideshow -->
+        <div class="slideshow">
+          <figure class="slide">
+            <img src="/img/WebsiteHeroPage.jpeg" alt="Image of this website's hero page." width="639.5" height="322.25" />
+          </figure>
+        </div>
+
+        <div class="description">
+          <div class="description-links">
+            <a href="https://github.com/BaseDorp/Portfolio-Website" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
+                height="50" />
+            </a>
+          </div>
+          <p>
+            This website I made as a way to branch into other types of development and I had a lot of fun working on it. Everything is made using HTML, CSS, and Vanilla Javascript. I hope to do more web development projects in the future as well as continue to update my website.
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="project-container">
       <div class="project-bar">
         <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
@@ -174,95 +261,12 @@
           </p>
         </div>
       </div>
-    </div>
-
+    </div>    
     <div class="project-container">
       <div class="project-bar">
         <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
 
-        <h4>Portfolio Website</h4>
-
-        <div class="tags">
-          <h5>HTML</h5>
-          <h5>CSS</h5>
-          <h5>JavaScript</h5>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <img src="/img/WebsiteHeroPage.jpeg" alt="Image of this website's hero page." width="639.5" height="322.25" />
-          </figure>
-        </div>
-
-        <div class="description">
-          <div class="description-links">
-            <a href="https://github.com/BaseDorp/Portfolio-Website" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
-          </div>
-          <p>
-            This website I made as a way to branch into other types of development and I had a lot of fun working on it. Everything is made using HTML, CSS, and Vanilla Javascript. I hope to do more web development projects in the future as well as continue to update my website.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-
-        <h4>Unity Tabletop Tanks Game</h4>
-
-        <div class="tags">
-          <h5>C#</h5>
-          <h5>Unity</h5>
-          <h5>AI</h5>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6838678841574203392?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-          </figure>
-
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aeH1vH9dCbE"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </figure>
-
-          <a class="prev">&#10094;</a>
-          <a class="next">&#10095;</a>
-        </div>
-
-        <div class="description">
-          <div class="description-links">
-            <a href="https://github.com/BaseDorp/TankGame" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
-          </div>
-          <p>
-            This is a tabletop style tank game, based on the Wii Play Tanks game, that I made for my AI Programming final and have come back to refactored post-graduation. The first video highlights how the enemy Ai tank reacts to multiple players it can go to. If would like to read more about it I posted a dev log on <a href="https://www.linkedin.com/posts/samhirschdev_progress-update-on-what-i-have-been-working-activity-6838680661759533056-MDjf" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-          </p>
-          <br>
-          <p>
-            The second video is from an earlier part in the development stage so some of it is outdated. The video does show off the basic mechanics including movement, shooting, bullet ricochet, and it is not shown in the video but all the bullets are enabled/disabled through object pooling.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="project-container">
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-
-        <h4>Hardcore Pizza Delivery</h4>
+        <h4>Hardcore Pizza Delivery (Grapple Game)</h4>
 
         <div class="tags">
           <h5>C++</h5>
@@ -310,7 +314,7 @@
         </div>
       </div>
     </div>
-    <div class="project-container">
+    <!-- <div class="project-container">
       <div class="project-bar">
         <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
 
@@ -324,7 +328,7 @@
       </div>
 
       <div class="project-content">
-        <!-- Slideshow -->
+        
         <div class="slideshow">
           <figure class="slide">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FE70YEQTSNU"
@@ -346,7 +350,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </main>
 
   <!-- Footer -->
@@ -372,5 +376,6 @@
     - attach next/prev arrows and caption depending on slide size
     - add animations to links
     - add responsiveness for mobile
-    - maybe add responsiveness for resolutions higher than 1080p
+    - add a misc/archived project section for old projects and linkedin dev posts
+    - make website color scheme more accessable for color blind people
  -->
