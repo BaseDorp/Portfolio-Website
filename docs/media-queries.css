@@ -85,12 +85,26 @@
       display: grid;
       font-size: 20px;
     }
+
+    .about h4{
+      font-size: 20px;
+    }
   
     .about p {
       margin: 10px auto;
       width: 90%;
       height: 50%;
-      font-size: 20px;
+      font-size: 18px;
+    }
+
+    .about-highlights{
+      display: flex;
+      flex-direction:column;
+    }
+
+    .highlight, .grid-highlights {
+      margin: 10px;
+      margin-bottom: 20px;
     }
   
     /* ----- Projects ------- */
