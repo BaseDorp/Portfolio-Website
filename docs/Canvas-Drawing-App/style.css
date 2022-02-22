@@ -1,0 +1,57 @@
+body {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tools{
+  margin-bottom: 10px;
+  width: 720px;
+  text-align: center;
+}
+
+button{
+  border: none;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.drawing-board {
+  position: relative;
+}
+
+#layers-container {
+  padding: 4px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: darkgray;
+}
+
+.layer{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.layer button{
+  margin: 2px;
+}
+
+#canvas-container {
+  border: 7px solid black;
+  border-radius: 15px;
+  width: 720px;
+  height: 480px;
+  background-color: whitesmoke;
+}
+
+.canvas-layer{
+  width: 720px;
+  height: 480px;
+  position: absolute;
+  background-color: transparent;
+}
