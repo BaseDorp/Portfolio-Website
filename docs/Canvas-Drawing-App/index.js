@@ -169,14 +169,21 @@ function draw(e) {
 // Removes the last object drawn and redraws the canvas
 function Undo() {
     if (historyArray[currentLayer].length == 0) return;
-    ClearCanvas();
+    // clear canvas // cant call ClearCanvas() here because then it will remove the history
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.beginPath();
+    
     historyArray[currentLayer].pop();
     UpdateCanvas();
 }
 
 // Erases the canvas and redraws the canvas from the array of drawn objects
 function UpdateCanvas() {
-    ClearCanvas();
+    
+    // clear canvas // cant call ClearCanvas() here because then it will remove the history
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.beginPath();
+
     for (let i = 0; i < historyArray[currentLayer].length; i++) {
         context.lineCap = "round";
         context.strokeStyle = historyArray[currentLayer][i].style;
