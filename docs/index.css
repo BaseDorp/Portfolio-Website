@@ -270,20 +270,33 @@ nav a {
 }
 
 /* ------------------- Project Slideshow ------------------- */
+
+.swiper {
+  width: 700px;
+  height: 370px;
+  border-radius: 0px;
+  }
+
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .slideshow {
-  /* width: 45%; */
+  
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.slide {
+/* .slide {
   display: none;
   position: relative;
   display: flex;
   justify-content: center;
   margin: 15px auto;
-}
+} */
 
 .slide iframe{
   max-width: 85vw;
@@ -297,7 +310,8 @@ nav a {
   margin: 0 auto;
   position: absolute;
   bottom: -3px;
-}
+} */
+
 
 .prev,
 .next {
@@ -314,7 +328,7 @@ nav a {
   -webkit-user-select: none; /* Safari */
 }
 
-.prev {
+/* .prev {
   position: absolute;
   left: 0px;
 }
@@ -322,7 +336,7 @@ nav a {
 .next {
   position: absolute;
   right: 0px;
-}
+} */
 
 /* ------------------- Project Description ------------------- */
 .description {

@@ -16,16 +16,22 @@
   <script type="text/javascript" src="/docs/copy-text.js" defer></script>
   <script type="text/javascript" src="/docs/side-bar.js" defer></script>
 
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
   <title>Sam Hirsch Portfolio</title>
   <link rel="icon" href="/img/Website_Icon3.png" type="image/x-icon" />
 </head>
 
 <body>
 
-  <!-- <div class="notification">
-    <p>Note: This website is currently still in development. If you find any bugs/errors or have any suggestions, I'd
-      love to hear them at samhirsch.dev@gmail.com</p>
-  </div> -->
+  <script>
+    
+  </script>
+  <div id="react-container"></div>
 
   <!-- Header -->
   <header>
@@ -125,6 +131,11 @@
 
     <!-- Projects -->
     <h3 class="projects">Projects</h3>
+    
+    <div id="react-component">
+
+    </div>
+    
     <div class="project-container">
       <div class="project-bar">
         <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
@@ -177,24 +188,25 @@
 
       <div class="project-content">
         <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6889116705612726272?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-          </figure>
-
-          <figure class="slide">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6838678841574203392?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-          </figure>
-
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aeH1vH9dCbE"
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6889116705612726272?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6838678841574203392?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/aeH1vH9dCbE"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
-          </figure>
-
-          <a class="prev">&#10094;</a>
-          <a class="next">&#10095;</a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
 
         <div class="description">
@@ -314,6 +326,68 @@
 
       <div class="project-content">
         <!-- Slideshow -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/img/HCPDMenuScreenshot.PNG" height="315" width="560" alt="game main menu image" />
+            </div>
+            <div class="swiper-slide">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WMkVaMJYpKM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/B6HCUprDkls"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <!-- <figure class="swiper-slide">
+              <img src="/img/HCPDMenuScreenshot.PNG" height="315" width="560" alt="game main menu image" />
+              <figcaption>Main Menu</figcaption>
+            </figure>
+            <figure class="swiper-slide">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WMkVaMJYpKM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </figure>
+            <figure class="swiper-slide">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/B6HCUprDkls"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </figure> -->
+          </div>
+
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        
+        <script>
+          const swiper = new Swiper('.swiper', {
+          // parameters
+          loop: true,
+          //centeredSlides: true,
+        
+          // enables pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+        </script>
+        <!--
         <div class="slideshow">
           <figure class="slide">
             <img src="/img/HCPDMenuScreenshot.PNG" height="315" width="560" alt="game main menu image" />
@@ -337,7 +411,7 @@
           <a class="prev">&#10094;</a>
           <a class="next">&#10095;</a>
         </div>
-
+-->
         <div class="description">
           <div class="description-links">
             <a href="https://github.com/Kobakat/GrappleGame" target="_blank" rel="noopener noreferrer">
@@ -367,16 +441,25 @@
       <a href="https://www.linkedin.com/in/samhirschdev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </nav>
   </footer>
+
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
 </body>
 
 </html>
 <!-- ============== TODO ==============
     - Find different background for hero landing page
     - See if you can change the slideshow size
-    - attach next/prev arrows and caption depending on slide size
     - add animations to links
     - add responsiveness for mobile
     - add a misc/archived project section for old projects and linkedin dev posts
     - make website color scheme more accessable for color blind people
     - Make smaller version of canvas drawing app to fit inside slideshow
+    - Add description to slides
  -->
