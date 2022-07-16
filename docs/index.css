@@ -74,9 +74,9 @@ header {
 }
 
 .background-image {
-  background-image: url(https://unity3d.com/profiles/unity3d/themes/unity/images/unity/beta/alpha-beta/2020.2b-improvements.jpg);
+  background-image: url(/img/backdrop.jpg);
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   position: absolute;
   z-index: -1;
   width: 100%;
