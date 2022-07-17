@@ -272,8 +272,8 @@ nav a {
 /* ------------------- Project Slideshow ------------------- */
 
 .swiper {
-  width: 700px;
-  height: 370px;
+  width: 720px;
+  /* height: 370px; */
   border-radius: 0px;
   }
 
@@ -299,7 +299,7 @@ nav a {
 } */
 
 .slide iframe{
-  max-width: 85vw;
+  /* max-width: 85vw; */
 }
 
 .slide figcaption {
