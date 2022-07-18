@@ -171,7 +171,7 @@
             </a>
           </div>
           <p>
-            This is a tabletop-style tank game, based on the Wii Play Tanks game, that I made for my AI Programming final and have continued to work on post-graduation. The project is updated for Unity's new input system and allows for local multiplayer using multiple controllers. There is also the option to change each player's inputs and customize their tank on the pause menu. There are multiple different types of tanks in the game at the moment including, a basic non-mobile tank, a moving tank, a missile tank, and a stationary radar. All of these tanks prioritize their closest player and share intel with other tanks in the level. As for other aspects, the bullets used in the game are enabled/disabled using Object Pooling. If would like to read more about it I posted a dev log on <a href="https://www.linkedin.com/posts/samhirschdev_progress-update-on-what-i-have-been-working-activity-6838680661759533056-MDjf" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+            This is a tabletop-style tank game, based on the Wii Play Tanks game, that I made for my AI Programming final and have continued to work on post-graduation. The project is updated for Unity's new input system and allows for local multiplayer using multiple controllers with the option to change each player's inputs and customize their tank on the pause menu. There are multiple different types of tanks in the game including, a basic non-mobile tank, a mobile tank tank that chases the closest player, a missile tank, and a stationary radar tank. All of these tanks prioritize their closest player and share intel with other tanks in the level. The bullets and missiles used in the game are being reused using Object Pooling for better scalability and performance with more complex levels. If would like to read more about it I post a dev logs as I update the game on <a href="https://www.linkedin.com/posts/samhirschdev_progress-update-on-what-i-have-been-working-activity-6838680661759533056-MDjf" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
           </p>
         </div>
       </div>
@@ -206,7 +206,7 @@
             </a>
           </div>
           <p>
-            Fluffy Guide is a project I worked on with 3 other students during a 4 week stretch of my capstone class. The game is closely modeled after the Club Penguin mini-game 'Puffle Roundup'. The goal of the game is to use the cursor to herd all of the cats into the pen. The different types of cats are spawned from a pool of 50 different sprites. 
+            Fluffy Guide is a project I worked on with 3 other students during a 4 week stretch of my capstone class and is closely modeled after the Club Penguin mini-game 'Puffle Roundup'. The goal of the game is to use the cursor to herd all of the cats into the pen without letting any escape before time runs out. With there being  50 different types of cats, it offers something unique on every playthrough. 
           </p>
         </div>
       </div>
@@ -251,7 +251,7 @@
             </a>
           </div>
           <p>
-            `It's Rewind Time` is a racing game I made for a final in my Game Programming class. For this project I wanted to utilize the command programming pattern. The command pattern keeps a stack of certain parts of the game that can be used to recreate aspects of the game at a later moment. For my racing game, I store the position and rotation of each player which allows each player to 'rewind time' for themselves or against their opponent.
+            `It's Rewind Time` is a racing game I made for my Game Programming class and I wanted to utilize the command programming pattern as a core concept of the game. The command pattern stores certain aspects of the game that can be used to at a later stage, which is very useful for undo/redo commands or highlighting replays. For my racing game, I store the position and rotation of each player which keeps a history of each player throughout the race and allows the player's to 'rewind time' on themselves or against their opponent. This mechanic is useful for setting back your oponent or correcting mistakes you made throughout the race.
           </p>
           </p>
         </div>
@@ -286,7 +286,7 @@
             </a>
           </div>
           <p>
-            This project was built for an assignment in my Graphics Application Programming class. This project we were challenged to build a platform besides PC with a theme. My theme was fire and I decided to make a demo targeted at the Meta Quest and Meta Rift S. In the demo, the user can walk around and grab any object in the world that is marked "grabbable." The user can also summon flames and fireballs in their hands at will to coincide with the fire theme of the project. Through this project, I become familiar with the Oculus Integration Package in Unity and building projects for external devices. 
+            This project was built for an assignment in my Graphics Application Programming class. This project we were challenged to build to a platform besides PC with a given theme. My theme was fire and I decided to make a demo targeted at the Meta/Oculus Quest and Oculus Rift S. In the demo, the user can walk around and interact with any "grabbable" object. The user also has the ability to summon flames and fireballs in their hands to coincide with the fire theme of the project. To improve performance and scalability all objects are removed after falling too far off the platform. Through this project, I become familiar with the Oculus Integration Package in Unity and building projects to external devices.
           </p>
         </div>
       </div>
@@ -323,20 +323,19 @@
             </a>
           </div>
           <p>
-            This is a recreation of the Asteroids arcade game I made in the
+            This is a recreation of the Asteroids arcade game I made using the
             olc::PixelGameEngine. I did this project because I wanted to
             become more familiar with how collision detection works between
-            simple objects. This game also handles all of the collision
-            checking through Quadtrees. When more than 'x' amount of objects
+            simple objects and to get some familiority working without some of the tools provided in higher level game engines. This game handles all of the collision
+            checking through Quadtrees. During the program, each object is added to the base quadtree. When more than 'x' amount of objects
             get put into that quadtree, the quadtree subdivides into 4 equally
             divided sub-quadtrees. This happens recursively until all objects
-            are placed into a quadtree.
+            are placed into their apporpriate quadtree.
           </p>
           <br>
           <p>
-            Now that all the objects are inside a bounding box, I only have to
-            do collision checks between objects in that bounding box, and not
-            with any of the other objects in the scene.
+            Now that all the objects are inside a quadtree, I only have to
+            do collision checks between objects in that same bounding box. This saves time on performance and I do not have to do a collision check between objects that are not close to eachother in the scene.
           </p>
           </p>
         </div>
@@ -396,7 +395,7 @@
             </a>
           </div>
           <p>
-            In Hardcore Pizza Delivery, the player has to deliver pizza while swinging around various environments. This project is made with a mix of Unreal Engine 4’s blueprint system and C++. I was a part of a team consisting of nine juniors and seniors. On this project, I worked as a general programmer and worked on features such as the checkpoints/out-of-bounds system, grapple collision checking through raycasting, and I made a visual indicator on the gun to see how much rope the player had left. I was able to do this using Unreal's material system. I also helped the artists with any problems they came across like blueprint debugging and importing meshes and materials.
+            Hardcore Pizza Delivery is a project I was apart of consisting of nine other junior and seniors as a capstone project and made using Unreal Engine 4 with a mix of C++ and Blueprints. In Hardcore Pizza Delivery, the player has to deliver pizza while swinging around various environments. On this project, I worked as a general programmer and worked on features such as developing the checkpoints/out-of-bounds system for the designer's use, grapple fire collision checking through raycasting, and a visual indicator on the grapple gun to see how much rope the player had left using Unreal's material system. I also helped the designers and artists with any problems they came across like blueprint debugging and importing meshes and materials.
           </p>
         </div>
       </div>
