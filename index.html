@@ -16,16 +16,17 @@
   <script type="text/javascript" src="/docs/copy-text.js" defer></script>
   <script type="text/javascript" src="/docs/side-bar.js" defer></script>
 
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
   <title>Sam Hirsch Portfolio</title>
   <link rel="icon" href="/img/Website_Icon3.png" type="image/x-icon" />
 </head>
 
 <body>
-
-  <!-- <div class="notification">
-    <p>Note: This website is currently still in development. If you find any bugs/errors or have any suggestions, I'd
-      love to hear them at samhirsch.dev@gmail.com</p>
-  </div> -->
 
   <!-- Header -->
   <header>
@@ -103,9 +104,7 @@
             <li>
               Graphics Application Programming
             </li>
-            <li>
-              Web Developement
-            </li>
+            <li>Web Developement</li>
             <li>
               AI Programming
             </li>
@@ -114,9 +113,6 @@
             </li>
             <li>
               Linear Algebra
-            </li>
-            <li>
-              Javscript Essential Training
             </li>
           </ul>
         </div>
@@ -130,7 +126,8 @@
 
     <!-- Projects -->
     <h3 class="projects">Projects</h3>
-    <div class="project-container">
+    
+    <div class="project-container"> <!-- Tanks Game -->
       <div class="project-bar">
         <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
 
@@ -145,24 +142,25 @@
 
       <div class="project-content">
         <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6889116705612726272?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-          </figure>
-
-          <figure class="slide">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6838678841574203392?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-          </figure>
-
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aeH1vH9dCbE"
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6889116705612726272?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6838678841574203392?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/aeH1vH9dCbE"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
-          </figure>
-
-          <a class="prev">&#10094;</a>
-          <a class="next">&#10095;</a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
 
         <div class="description">
@@ -173,20 +171,97 @@
             </a>
           </div>
           <p>
-            This is a tabletop style tank game, based on the Wii Play Tanks game, that I made for my AI Programming final and have come back to refactored post-graduation. The first video highlights how the enemy Ai tank reacts to multiple players it can go to. If would like to read more about it I posted a dev log on <a href="https://www.linkedin.com/posts/samhirschdev_progress-update-on-what-i-have-been-working-activity-6838680661759533056-MDjf" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-          </p>
-          <br>
-          <p>
-            The second video is from an earlier part in the development stage so some of it is outdated. The video does show off the basic mechanics including movement, shooting, bullet ricochet, and it is not shown in the video but all the bullets are enabled/disabled through object pooling.
+            This is a tabletop-style tank game, based on the Wii Play Tanks game, that I made for my AI Programming final and have continued to work on post-graduation. The project is updated for Unity's new input system and allows for local multiplayer using multiple controllers. There is also the option to change each player's inputs and customize their tank on the pause menu. There are multiple different types of tanks in the game at the moment including, a basic non-mobile tank, a moving tank, a missile tank, and a stationary radar. All of these tanks prioritize their closest player and share intel with other tanks in the level. As for other aspects, the bullets used in the game are enabled/disabled using Object Pooling. If would like to read more about it I posted a dev log on <a href="https://www.linkedin.com/posts/samhirschdev_progress-update-on-what-i-have-been-working-activity-6838680661759533056-MDjf" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
           </p>
         </div>
       </div>
     </div>
-    <div class="project-container">
+    <div class="project-container"> <!-- Fluffy Guide -->
       <div class="project-bar">
         <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
 
-        <h4>Fire Quest Demo</h4>
+        <h4>Fluffy Guide</h4>
+
+        <div class="tags">
+          <h5>C#</h5>
+          <h5>Unity</h5>
+          <h5>Object Pooling</h5>
+          <h5>Team</h5>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <!-- Slideshow -->
+        <div class="slideshow">
+          <figure class="slide">
+            <img src="/img/FluffyGuide_Screenshot.png" alt="Drawing of a flower made in the canvas app" width="481.6" height="291.6" />
+          </figure>
+        </div>
+
+        <div class="description">
+          <div class="description-links">
+            <a href="https://github.com/BaseDorp/Fluffy-Guide" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
+                height="50" />
+            </a>
+          </div>
+          <p>
+            Fluffy Guide is a project I worked on with 3 other students during a 4 week stretch of my capstone class. The game is closely modeled after the Club Penguin mini-game 'Puffle Roundup'. The goal of the game is to use the cursor to herd all of the cats into the pen. The different types of cats are spawned from a pool of 50 different sprites. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="project-container"> <!-- Rewind Time -->
+      <div class="project-bar">
+        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
+
+        <h4>Rewind Time</h4>
+
+        <div class="tags">
+          <h5>C#</h5>
+          <h5>Unity</h5>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <!-- Slideshow -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/img/RewindTime_Screenshot.png" alt="Rewind Time Gameplay Screenshot" width="598" height="334">
+            </div>
+            <div class="swiper-slide">
+              <figure class="slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wvdzUMFyXWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </figure>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="description">
+          <div class="description-links">
+            <a href="https://github.com/BaseDorp/ItsRewindTime" target="_blank"
+              rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
+                height="50" />
+            </a>
+          </div>
+          <p>
+            `It's Rewind Time` is a racing game I made for a final in my Game Programming class. For this project I wanted to utilize the command programming pattern. The command pattern keeps a stack of certain parts of the game that can be used to recreate aspects of the game at a later moment. For my racing game, I store the position and rotation of each player which allows each player to 'rewind time' for themselves or against their opponent.
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="project-container"> <!-- VR Fire -->
+      <div class="project-bar">
+        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
+
+        <h4>Meta Quest VR Demo</h4>
 
         <div class="tags">
           <h5>VR</h5>
@@ -211,83 +286,12 @@
             </a>
           </div>
           <p>
-            Unity VR
+            This project was built for an assignment in my Graphics Application Programming class. This project we were challenged to build a platform besides PC with a theme. My theme was fire and I decided to make a demo targeted at the Meta Quest and Meta Rift S. In the demo, the user can walk around and grab any object in the world that is marked "grabbable." The user can also summon flames and fireballs in their hands at will to coincide with the fire theme of the project. Through this project, I become familiar with the Oculus Integration Package in Unity and building projects for external devices. 
           </p>
         </div>
       </div>
     </div>
-    <div class="project-container">
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-
-        <h4>Canvas Drawing App</h4>
-
-        <div class="tags">
-          <h5>JavaScript</h5>
-          <h5>Canvas</h5>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <img src="/img/SunflowerCanvasDrawing.jpg" alt="Drawing of a flower made in the canvas app" width="481.6" height="291.6" />
-          </figure>
-        </div>
-
-        <div class="description">
-          <div class="description-links">
-            <a href="https://github.com/BaseDorp/Canvas-Drawing-App" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
-            <a href="/docs/Canvas-Drawing-App/index.html" target="_blank" rel="noopener noreferrer" title="Open in new tab"> 
-              <img src="https://static.thenounproject.com/png/299638-200.png" alt="Open in new tab button" width="50"
-                height="50" />
-            </a>
-          </div>
-          <p>
-            Here is a web drawing application made using Javascript and the HTML canvas element. In this application you can use multiple tools to create the drawing like a line tool, circle, and square tool. The application also supports layering. Each layer can be toggled on and off anytime as well as add and deleting layers while keeping the other layer's integrety. If the user doesn't like what they've drawn or made a mistake, there is also a undo and clear canvas button. These buttons undo the last action or clear all drawings on the current layer the user has selected. You can try out the application in a new window <a href="/docs/Canvas-Drawing-App/index.html" target="_blank" rel="noopener noreferrer" title="Open drawing app">here.</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="project-container">
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-
-        <h4>Portfolio Website</h4>
-
-        <div class="tags">
-          <h5>HTML</h5>
-          <h5>CSS</h5>
-          <h5>JavaScript</h5>
-        </div>
-      </div>
-
-      <div class="project-content">
-        // Slideshow // 
-        <div class="slideshow">
-          <figure class="slide">
-            <img src="/img/WebsiteHeroPage.jpeg" alt="Image of this website's hero page." width="639.5" height="322.25" />
-          </figure>
-        </div>
-
-        <div class="description">
-          <div class="description-links">
-            <a href="https://github.com/BaseDorp/Portfolio-Website" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
-          </div>
-          <p>
-            This website I made as a way to branch into other types of development and I had a lot of fun working on it. Everything is made using HTML, CSS, and Vanilla Javascript. I hope to do more web development projects in the future as well as continue to update my website.
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <div class="project-container">
+    <div class="project-container"> <!-- Asteroids with Quadtrees -->
       <div class="project-bar">
         <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
 
@@ -337,8 +341,8 @@
           </p>
         </div>
       </div>
-    </div>    
-    <div class="project-container">
+    </div>
+    <div class="project-container"> <!-- Grapple Game -->
       <div class="project-bar">
         <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
 
@@ -353,30 +357,37 @@
 
       <div class="project-content">
         <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <img src="/img/HCPDMenuScreenshot.PNG" height="315" width="560" alt="game main menu image" />
-            <figcaption>Main Menu</figcaption>
-          </figure>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/img/HCPDMenuScreenshot.PNG" height="315" width="560" alt="game main menu image" />
+            </div>
+            <div class="swiper-slide">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WMkVaMJYpKM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/SlackIndicator.gif" alt="Slack Gun Material gif" height="315" width="560">
+            </div>
+            <div class="swiper-slide">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/B6HCUprDkls"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
 
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WMkVaMJYpKM"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </figure>
-
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/B6HCUprDkls"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </figure>
-
-          <a class="prev">&#10094;</a>
-          <a class="next">&#10095;</a>
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-
+        
+        
         <div class="description">
           <div class="description-links">
             <a href="https://github.com/Kobakat/GrappleGame" target="_blank" rel="noopener noreferrer">
@@ -385,11 +396,174 @@
             </a>
           </div>
           <p>
-            In Hardcore Pizza Delivery, the player has to deliver pizza while swinging around various environments. This project is made with a mix of Unreal Engine 4’s blueprint system and C++. I was a part of a team consisting of nine juniors and seniors. On this project, I worked as a general programmer and worked on the checkpoint/out of bounds system and grapple detection through raycasting. I also helped the artists with any problems they came across like blueprints and materials.
+            In Hardcore Pizza Delivery, the player has to deliver pizza while swinging around various environments. This project is made with a mix of Unreal Engine 4’s blueprint system and C++. I was a part of a team consisting of nine juniors and seniors. On this project, I worked as a general programmer and worked on features such as the checkpoints/out-of-bounds system, grapple collision checking through raycasting, and I made a visual indicator on the gun to see how much rope the player had left. I was able to do this using Unreal's material system. I also helped the artists with any problems they came across like blueprint debugging and importing meshes and materials.
           </p>
         </div>
       </div>
     </div>
+    <div class="project-container"> <!-- Canvas Drawing App -->
+      <div class="project-bar">
+        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
+
+        <h4>Canvas Drawing App</h4>
+
+        <div class="tags">
+          <h5>JavaScript</h5>
+          <h5>Canvas</h5>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <!-- Slideshow -->
+        <div class="slideshow">
+          <figure class="slide">
+            <img src="/img/SunflowerCanvasDrawing.jpg" alt="Drawing of a flower made in the canvas app" width="481.6" height="291.6" />
+          </figure>
+        </div>
+
+        <div class="description">
+          <div class="description-links">
+            <a href="https://github.com/BaseDorp/Canvas-Drawing-App" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
+                height="50" />
+            </a>
+            <a href="/docs/Canvas-Drawing-App/index.html" target="_blank" rel="noopener noreferrer" title="Open in new tab"> 
+              <img src="https://static.thenounproject.com/png/299638-200.png" alt="Open in new tab button" width="50"
+                height="50" />
+            </a>
+          </div>
+          <p>
+            Here is a web drawing application made using Javascript and the HTML canvas element. In this application you can use multiple tools, like a line tool, circle, and square tool, to create a drawing. The application also supports layering. Each layer can be toggled on and off anytime as well as add and deleting layers while keeping the other layer's integrety. If the user doesn't like what they've drawn or made a mistake, there is also a undo and clear canvas button. These buttons undo the last action or clear all drawings on the current layer the user has selected. You can try out the application in a new window <a href="/docs/Canvas-Drawing-App/index.html" target="_blank" rel="noopener noreferrer" title="Open drawing app">here.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="project-container"> <!-- 3D Modeling -->
+      <div class="project-bar">
+        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
+
+        <h4>3D Modeling</h4>
+
+        <div class="tags">
+          <h5>Maya</h5>
+          <h5>ZBrush</h5>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <p>
+          This is a collection of assets I have made through my art and animation minor.
+        </p>
+
+        <!-- Slideshow -->
+        <div class="art-container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/SamHirsch_Tank_Final_Lowpoly3.jpg" width="800" height="500">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/SamHirsch_Tank_Final_Lowpoly4.jpg" width="800" height="500">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/SamHirsch_Tank_Final_Lowpoly5.jpg" width="800" height="500">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/tank_unwrapped.jpg" width="732" height="350">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+          </div>
+          <p>Toy tank used made for my Unity Tank Game</p>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/DeskRender1.jpg" width="720" height="480">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/DeskRender2.jpg" width="720" height="480">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/WireframeDesk.jpg" width="720" height="480">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+          </div>
+          <p>L-Shaped Computer Desk</p>
+
+          <div class="swiper">
+            <img src="/img/SamHirsch_Magikarp_Highpoly_web.jpg" alt="Magikarp Render" width="740" height="460">
+          </div>
+          <p>Magikarp from Pokemon using ZBrush</p>
+
+          <!-- <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/sam_hirsch_monitor_highpoly.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/TexturedLowPolyWeb.jpg">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+          </div>
+          <p>Gaming Monitor</p> -->
+          <!-- <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/DeskRender1.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/DeskRender2.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/WireframeDesk.jpg">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+          </div>
+          <p>Piano Keyboard</p> -->
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const swiper = new Swiper('.swiper', {
+      // parameters
+      loop: true,
+      centeredSlides: true,
+      autoheight: true,
+    
+      // enables pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
+
   </main>
 
   <!-- Footer -->
@@ -406,17 +580,16 @@
       <a href="https://www.linkedin.com/in/samhirschdev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </nav>
   </footer>
+
 </body>
 
 </html>
 <!-- ============== TODO ==============
     - Find different background for hero landing page
     - See if you can change the slideshow size
-    - attach next/prev arrows and caption depending on slide size
     - add animations to links
     - add responsiveness for mobile
-    - add a misc/archived project section for old projects and linkedin dev posts
     - make website color scheme more accessable for color blind people
     - Make smaller version of canvas drawing app to fit inside slideshow
-    - integrate swiper library https://swiperjs.com/
- --> 
+    - Add description to slides
+ -->

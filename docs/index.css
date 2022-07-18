@@ -74,9 +74,9 @@ header {
 }
 
 .background-image {
-  background-image: url(https://unity3d.com/profiles/unity3d/themes/unity/images/unity/beta/alpha-beta/2020.2b-improvements.jpg);
+  background-image: url(/img/backdrop.jpg);
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -270,23 +270,36 @@ nav a {
 }
 
 /* ------------------- Project Slideshow ------------------- */
+
+.swiper {
+  width: 720px;
+  /* height: 370px; */
+  border-radius: 0px;
+  }
+
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .slideshow {
-  /* width: 45%; */
+  
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.slide {
+/* .slide {
   display: none;
   position: relative;
   display: flex;
   justify-content: center;
   margin: 15px auto;
-}
+} */
 
 .slide iframe{
-  max-width: 85vw;
+  /* max-width: 85vw; */
 }
 
 .slide figcaption {
@@ -297,7 +310,8 @@ nav a {
   margin: 0 auto;
   position: absolute;
   bottom: -3px;
-}
+} */
+
 
 .prev,
 .next {
@@ -314,7 +328,7 @@ nav a {
   -webkit-user-select: none; /* Safari */
 }
 
-.prev {
+/* .prev {
   position: absolute;
   left: 0px;
 }
@@ -322,7 +336,7 @@ nav a {
 .next {
   position: absolute;
   right: 0px;
-}
+} */
 
 /* ------------------- Project Description ------------------- */
 .description {
