@@ -52,21 +52,16 @@
       <img src="/img/GradImage.jpg" alt="Portait Picture" width="405" height="540" />
       <div class="profile-text">
         <h4>Hi, my name is <span>Sam Hirsch</span> and I am a</h4>
-        <h1>Computer Programmer</h1>
+        <h1>Technical Project Manager</h1>
       </div>
     </div>
   </header>
-
-  <!-- View More Seperator -->
-  <div class="view-more">
-    <a onclick="document.querySelector('main').scrollIntoView();">vv View More vv</a>
-  </div>
 
   <main>
     <!-- About Section-->
     <h3>About Me</h3>
     <div class="about">
-      <p>
+      <!--<p>
         My name is Samuel Hirsch and I am a programmer pursuing a place in the software engineering industry. I graduated from Columbia College Chicago in the spring of 2021 with a Bachelor's of Science in Computer Programming and a minor in Computer Art and Animation. I have always enjoyed the creative process. Growing up, I took an interest in Minecraft’s command blocks system and would try to push the boundaries of what I thought was possible inside of the game. Since then I have always been trying to go further with what I can do and start teaching myself Unreal Engine’s Blueprints and now programming my own games and software in multiple different programming languages. Some of my interests include Game Programming, Graphics Programming, and XR Programming.
       </p>
       <div class="about-highlights">
@@ -82,41 +77,9 @@
             <h4>Experience on Team Projects through Game Jams and School Projects</h4>
           </div>
         </div>
-        <div class="grid-highlights">
-          <div class="highlight">
-            <img src="https://cdn-icons-png.flaticon.com/512/4088/4088702.png" alt="book icon" width="90px"
-              height="90px">
-            <h4>Relavent Classes:</h4>
-          </div>
-          <ul> 
-            <li>
-              Game Studio 1 & 2 (Capstone)
-            </li>
-            <li>
-              Object Oriented Programming 1 & 2 (C#)
-            </li>
-            <li>
-              C++ 1 & 2
-            </li>
-            <li>
-              Game Programming 1 & 2
-            </li>
-            <li>
-              Graphics Application Programming
-            </li>
-            <li>Web Developement</li>
-            <li>
-              AI Programming
-            </li>
-            <li>
-              Algorithms
-            </li>
-            <li>
-              Linear Algebra
-            </li>
-          </ul>
-        </div>
+      
       </div>
+      -->
     </div>
 
     <!-- View More Seperator -->
@@ -126,7 +89,47 @@
 
     <!-- Projects -->
     <h3 class="projects">Projects</h3>
-    
+    <div class="project-container"> <!-- Tanks Game -->
+      <div class="project-bar">
+        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
+
+        <h4>VFX</h4>
+
+        <div class="tags">
+          <h5>Unreal Engine</h5>
+          <h5>Niagra</h5>
+          <h5>VFX</h5>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <!-- Slideshow -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              
+            </div>
+            <div class="swiper-slide">
+              
+            </div>
+            <div class="swiper-slide">
+              
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="description">
+          
+          <p>
+            VFX
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="project-container"> <!-- Tanks Game -->
       <div class="project-bar">
         <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
@@ -172,121 +175,6 @@
           </div>
           <p>
             This is a tabletop-style tank game, based on the Wii Play Tanks game, that I made for my AI Programming final and have continued to work on post-graduation. The project is updated for Unity's new input system and allows for local multiplayer using multiple controllers with the option to change each player's inputs and customize their tank on the pause menu. There are multiple different types of tanks in the game including, a basic non-mobile tank, a mobile tank that chases the closest player, a missile tank, and a stationary radar tank. All of these tanks prioritize their closest player and share intel with other tanks in the level. The bullets and missiles used in the game are being reused using Object Pooling for better scalability and performance with more complex levels. If would like to read more about it I post dev logs as I update the game on <a href="https://www.linkedin.com/posts/samhirschdev_progress-update-on-what-i-have-been-working-activity-6838680661759533056-MDjf" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="project-container"> <!-- Fluffy Guide -->
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-
-        <h4>Fluffy Guide</h4>
-
-        <div class="tags">
-          <h5>C#</h5>
-          <h5>Unity</h5>
-          <h5>Object Pooling</h5>
-          <h5>Team</h5>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <img src="/img/FluffyGuide_Screenshot.png" alt="Drawing of a flower made in the canvas app" width="481.6" height="291.6" />
-          </figure>
-        </div>
-
-        <div class="description">
-          <div class="description-links">
-            <a href="https://github.com/BaseDorp/Fluffy-Guide" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
-          </div>
-          <p>
-            Fluffy Guide is a project I worked on with 3 other students during a 4 week stretch of my capstone class and is closely modeled after the Club Penguin mini-game 'Puffle Roundup'. The goal of the game is to use the cursor to herd all of the cats into the pen without letting any escape before time runs out. With there being  50 different types of cats, it offers something unique on every playthrough. 
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="project-container"> <!-- Rewind Time -->
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-
-        <h4>Rewind Time</h4>
-
-        <div class="tags">
-          <h5>C#</h5>
-          <h5>Unity</h5>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/img/RewindTime_Screenshot.png" alt="Rewind Time Gameplay Screenshot" width="598" height="334">
-            </div>
-            <div class="swiper-slide">
-              <figure class="slide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wvdzUMFyXWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </figure>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="description">
-          <div class="description-links">
-            <a href="https://github.com/BaseDorp/ItsRewindTime" target="_blank"
-              rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
-          </div>
-          <p>
-            `It's Rewind Time` is a racing game I made for my Game Programming class and I wanted to utilize the command programming pattern as a core concept of the game. The command pattern stores certain aspects of the game that can be used at a later stage, which is very useful for undo/redo commands or highlighting replays. For my racing game, I store the position and rotation of each player which keeps a history of each player throughout the race and allows the players to 'rewind time' on themselves or against their opponent. This mechanic is useful for setting back your opponent or correcting mistakes you made throughout the race
-          </p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="project-container"> <!-- VR Fire -->
-      <div class="project-bar">
-        <img class="project-arrow" src="/img/Triangle.svg" alt="drop down arrow" width="30" height="30" />
-
-        <h4>Meta Quest VR Demo</h4>
-
-        <div class="tags">
-          <h5>VR</h5>
-          <h5>Unity</h5>
-          <h5>C#</h5>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <!-- Slideshow -->
-        <div class="slideshow">
-          <figure class="slide">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FE70YEQTSNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </figure>
-        </div>
-
-        <div class="description">
-          <div class="description-links">
-            <a href="https://github.com/BaseDorp/Unity-VR-Demo" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github logo button" width="50"
-                height="50" />
-            </a>
-          </div>
-          <p>
-            This project was built for an assignment in my Graphics Application Programming class. In this project, we were challenged to build a platform besides PC with a given theme. My theme was fire and I decided to make a demo targeted at the Meta/Oculus Quest and Oculus Rift S. In the demo, the user can walk around and interact with any "grabbable" object. The user also has the ability to summon flames and fireballs in their hands to coincide with the fire theme of the project. To improve performance and scalability all objects are removed after falling too far off the platform. Through this project, I become familiar with the Oculus Integration Package in Unity and building projects for external devices.
           </p>
         </div>
       </div>
@@ -590,4 +478,5 @@
     - make website color scheme more accessable for color blind people
     - Make smaller version of canvas drawing app to fit inside slideshow
     - Add description to slides
+    - better scaling for different resolutions
  -->
