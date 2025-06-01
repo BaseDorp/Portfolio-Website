@@ -11,37 +11,41 @@
         <!-- Accordion Header -->
         <button
           @click="toggleProject(index)"
-          class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-700/30 transition-colors duration-200"
+          class="w-full px-4 sm:px-6 py-4 sm:py-5 text-left hover:bg-gray-700/30 transition-colors duration-200"
         >
-          <div class="flex items-center space-x-4 flex-1 min-w-0">
-            <!-- Arrow Icon -->
-            <div class="flex-shrink-0">
-              <svg
-                :class="[
-                  'w-6 h-6 text-blue-400 transition-transform duration-300',
-                  openProject === index ? 'rotate-90' : ''
-                ]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
+          <!-- Mobile: Stack vertically, Desktop: Side by side -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+            <!-- Title Section -->
+            <div class="flex items-center space-x-3 sm:space-x-4 flex-1 min-w-0">
+              <!-- Arrow Icon -->
+              <div class="flex-shrink-0">
+                <svg
+                  :class="[
+                    'w-5 h-5 sm:w-6 sm:h-6 text-blue-400 transition-transform duration-300',
+                    openProject === index ? 'rotate-90' : ''
+                  ]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+              
+              <!-- Project Title -->
+              <h3 class="text-lg sm:text-xl font-semibold text-white min-w-0 flex-1">{{ project.title }}</h3>
             </div>
             
-            <!-- Project Title -->
-            <h3 class="text-xl font-semibold text-white min-w-0 flex-1">{{ project.title }}</h3>
-          </div>
-          
-          <!-- Tags -->
-          <div class="flex flex-wrap gap-2 ml-4 flex-shrink-0">
-            <span
-              v-for="tag in project.tags"
-              :key="tag"
-              class="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full border border-blue-500/30"
-            >
-              {{ tag }}
-            </span>
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 ml-8 sm:ml-0 sm:flex-shrink-0">
+              <span
+                v-for="tag in project.tags"
+                :key="tag"
+                class="px-2 sm:px-3 py-1 bg-blue-500/20 text-blue-300 text-xs sm:text-sm rounded-full border border-blue-500/30"
+              >
+                {{ tag }}
+              </span>
+            </div>
           </div>
         </button>
         
@@ -215,10 +219,63 @@ const projects = ref([
         type: 'gif',
         url: '/images/Animation.gif',
         alt: 'Character aura VFX animation'
-      },
+      }
     ],
     description: [
       '***collecting more pictures***'
+    ],
+    links: []
+  },
+  {
+    id: '3d-modeling',
+    title: '3D Modeling',
+    tags: ['Maya', 'ZBrush'],
+    media: [
+      {
+        type: 'image',
+        url: '/images/SamHirsch_Tank_Final_Lowpoly3.jpg',
+        alt: 'Toy tank model - angle view'
+      },
+      {
+        type: 'image',
+        url: '/images/SamHirsch_Tank_Final_Lowpoly4.jpg',
+        alt: 'Toy tank model - side view'
+      },
+      {
+        type: 'image',
+        url: '/images/SamHirsch_Tank_Final_Lowpoly5.jpg',
+        alt: 'Toy tank model - front view'
+      },
+      {
+        type: 'image',
+        url: '/images/tank_unwrapped.jpg',
+        alt: 'Tank UV unwrap layout'
+      },
+      {
+        type: 'image',
+        url: '/images/DeskRender1.jpg',
+        alt: 'L-shaped computer desk render - view 1'
+      },
+      {
+        type: 'image',
+        url: '/images/DeskRender2.jpg',
+        alt: 'L-shaped computer desk render - view 2'
+      },
+      {
+        type: 'image',
+        url: '/images/WireframeDesk.jpg',
+        alt: 'Computer desk wireframe view'
+      },
+      {
+        type: 'image',
+        url: '/images/SamHirsch_Magikarp_Highpoly_web.jpg',
+        alt: 'Magikarp Pokemon model made in ZBrush'
+      }
+    ],
+    description: [
+      'This is a collection of assets I have made through my art and animation minor.',
+      'Featured works include a toy tank used for my Unity Tank Game, an L-shaped computer desk with detailed modeling and texturing, and a Magikarp from Pokemon sculpted using ZBrush.',
+      'These projects demonstrate skills in both hard surface modeling in Maya and organic sculpting in ZBrush, showcasing different approaches to 3D asset creation.'
     ],
     links: []
   },
@@ -340,63 +397,10 @@ const projects = ref([
       },
       {
         type: 'external',
-        url: '/Canvas-Drawing-App/index.html',
+        url: '/docs/Canvas-Drawing-App/index.html',
         title: 'Try the App'
       }
     ]
-  },
-  {
-    id: '3d-modeling',
-    title: '3D Modeling',
-    tags: ['Maya', 'ZBrush'],
-    media: [
-      {
-        type: 'image',
-        url: '/images/SamHirsch_Tank_Final_Lowpoly3.jpg',
-        alt: 'Toy tank model - angle view'
-      },
-      {
-        type: 'image',
-        url: '/images/SamHirsch_Tank_Final_Lowpoly4.jpg',
-        alt: 'Toy tank model - side view'
-      },
-      {
-        type: 'image',
-        url: '/images/SamHirsch_Tank_Final_Lowpoly5.jpg',
-        alt: 'Toy tank model - front view'
-      },
-      {
-        type: 'image',
-        url: '/images/tank_unwrapped.jpg',
-        alt: 'Tank UV unwrap layout'
-      },
-      {
-        type: 'image',
-        url: '/images/DeskRender1.jpg',
-        alt: 'L-shaped computer desk render - view 1'
-      },
-      {
-        type: 'image',
-        url: '/images/DeskRender2.jpg',
-        alt: 'L-shaped computer desk render - view 2'
-      },
-      {
-        type: 'image',
-        url: '/images/WireframeDesk.jpg',
-        alt: 'Computer desk wireframe view'
-      },
-      {
-        type: 'image',
-        url: '/images/SamHirsch_Magikarp_Highpoly_web.jpg',
-        alt: 'Magikarp Pokemon model made in ZBrush'
-      }
-    ],
-    description: [
-      'This is a collection of assets I have made through my art and animation minor.',
-      'Featured works include a toy tank used for my Unity Tank Game, an L-shaped computer desk with detailed modeling and texturing, and a Magikarp from Pokemon sculpted using ZBrush.',
-      'These projects demonstrate skills in both hard surface modeling in Maya and organic sculpting in ZBrush, showcasing different approaches to 3D asset creation.'
-    ],
-    links: []
   }
 ])
 
