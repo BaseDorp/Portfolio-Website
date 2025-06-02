@@ -14,7 +14,7 @@
       
       <!-- Power BI Logo - Made White -->
       <img 
-        src="/images/-z0mKEN-power-bi.svg" 
+        src="/images/power-bi.svg" 
         alt="Power BI"
         class="h-8 w-26 brightness-0 invert"
       />
