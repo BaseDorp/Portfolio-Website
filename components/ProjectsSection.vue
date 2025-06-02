@@ -210,19 +210,19 @@ const currentSlides = reactive({})
 
 // Sample projects data - replace with your actual data
 const projects = ref([
-  {
-    id: 'vfx',
+  { // Heroverse
+    id: 'heroverse', // TODO what does the ID do??
     title: 'Online Multiplayer RPG',
     tags: ['Unreal Engine', 'Blueprints'],
     media: [
       {
-        type: 'gif',
-        url: '/images/Animation.gif', // TODO make twitter video
-        alt: 'Character aura VFX animation'
+        type: 'video',
+        url: 'https://x.com/i/status/1923889672222130309', // TODO make twitter video
+        alt: 'Demo video from twitter'
       }
     ],
     description: [
-      'My latest personal project has been creating a online multiplayer role playing game. I am working on this project to increase my knowledge in the broad amount of systems in unreal engine, as well as dive deeper into how online mutliplayer works with Unreal Engine 5 and Epic Online Subsystems.',
+      'My latest personal project has been creating a online multiplayer role playing game. I am working on this project to increase my knowledge in the development pipeline of Unreal Engine, as well as dive deeper into how online mutliplayer works with UE5 and Epic Online Subsystems.',
       'As of writing this, the game contains',
       '- Player Online Mutliplayer Replication',
       '- Player Controller (idle/walk/run/jump/3-attack combo)',
@@ -233,7 +233,31 @@ const projects = ref([
     ],
     links: []
   },
-  {
+  { // Quadtrees Asteroids
+    id: 'asteroids',
+    title: 'Asteroids with Quadtrees',
+    tags: ['C++', 'Collision Detection'],
+    media: [
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/embed/-045Ykvdxnw',
+        title: 'Asteroids with Quadtrees Demo'
+      }
+    ],
+    description: [
+      'This is a recreation of the Asteroids arcade game using the olc::PixelGameEngine. My goals for this project were: Learn more about collision detection, take some time working without a game engine, and brush up on my C++ knowledge.',
+      'In this game, collision checks are determined by quadtrees. During the program, each object is added to the base quadtree. When more than \'x\' amount of objects get put into that quadtree, the quadtree subdivides into 4 equally divided sub-quadtrees. This happens recursively until all objects are placed into their appropriate quadtree.',
+      'Now that all the objects are inside a quadtree, I only have to do collision checks between objects in that same bounding box. This saves time on performance and I do not have to do a collision check between objects that are not close to each other in the scene.'
+    ],
+    links: [
+      {
+        type: 'github',
+        url: 'https://github.com/BaseDorp/Asteroids-olcPixelGameEngine',
+        title: 'View on GitHub'
+      }
+    ]
+  },
+  { // VFX
     id: 'vfx',
     title: 'VFX',
     tags: ['Unreal Engine', 'Niagara', 'VFX'],
@@ -249,7 +273,40 @@ const projects = ref([
     ],
     links: []
   },
-  {
+  { // Tanks Game
+    id: 'tanks-game',
+    title: 'Unity Tabletop Tanks Game',
+    tags: ['C#', 'Unity', 'AI'],
+    media: [
+      {
+        type: 'video',
+        url: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6889116705612726272?compact=1',
+        title: 'Tanks Game LinkedIn Post'
+      },
+      {
+        type: 'video',
+        url: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6838678841574203392?compact=1',
+        title: 'Tanks Game Development Update'
+      },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/embed/aeH1vH9dCbE',
+        title: 'Tanks Game Gameplay'
+      }
+    ],
+    description: [
+      'This is a tabletop-style tank game, based on the Wii Play Tanks game, that I made for my AI Programming final and have continued to work on post-graduation. The project is updated for Unity\'s new input system and allows for local multiplayer using multiple controllers with the option to change each player\'s inputs and customize their tank on the pause menu.',
+      'There are multiple different types of tanks in the game including, a basic non-mobile tank, a mobile tank that chases the closest player, a missile tank, and a stationary radar tank. All of these tanks prioritize their closest player and share intel with other tanks in the level. The bullets and missiles used in the game are being reused using Object Pooling for better scalability and performance with more complex levels.'
+    ],
+    links: [
+      {
+        type: 'github',
+        url: 'https://github.com/BaseDorp/TankGame',
+        title: 'View on GitHub'
+      }
+    ]
+  },
+  { // 3D Modeling
     id: '3d-modeling',
     title: '3D Modeling',
     tags: ['Maya', 'ZBrush'],
@@ -301,65 +358,8 @@ const projects = ref([
       'These projects demonstrate skills in both hard surface modeling in Maya and organic sculpting in ZBrush, showcasing different approaches to 3D asset creation.'
     ],
     links: []
-  },
-  {
-    id: 'tanks-game',
-    title: 'Unity Tabletop Tanks Game',
-    tags: ['C#', 'Unity', 'AI'],
-    media: [
-      {
-        type: 'video',
-        url: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6889116705612726272?compact=1',
-        title: 'Tanks Game LinkedIn Post'
-      },
-      {
-        type: 'video',
-        url: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6838678841574203392?compact=1',
-        title: 'Tanks Game Development Update'
-      },
-      {
-        type: 'video',
-        url: 'https://www.youtube.com/embed/aeH1vH9dCbE',
-        title: 'Tanks Game Gameplay'
-      }
-    ],
-    description: [
-      'This is a tabletop-style tank game, based on the Wii Play Tanks game, that I made for my AI Programming final and have continued to work on post-graduation. The project is updated for Unity\'s new input system and allows for local multiplayer using multiple controllers with the option to change each player\'s inputs and customize their tank on the pause menu.',
-      'There are multiple different types of tanks in the game including, a basic non-mobile tank, a mobile tank that chases the closest player, a missile tank, and a stationary radar tank. All of these tanks prioritize their closest player and share intel with other tanks in the level. The bullets and missiles used in the game are being reused using Object Pooling for better scalability and performance with more complex levels.'
-    ],
-    links: [
-      {
-        type: 'github',
-        url: 'https://github.com/BaseDorp/TankGame',
-        title: 'View on GitHub'
-      }
-    ]
-  },
-  {
-    id: 'asteroids',
-    title: 'Asteroids with Quadtrees',
-    tags: ['C++', 'Collision Detection'],
-    media: [
-      {
-        type: 'video',
-        url: 'https://www.youtube.com/embed/-045Ykvdxnw',
-        title: 'Asteroids with Quadtrees Demo'
-      }
-    ],
-    description: [
-      'This is a recreation of the Asteroids arcade game I made using the olc::PixelGameEngine. I did this project because I wanted to become more familiar with how collision detection works between simple objects and to get some familiarity working without some of the tools provided in higher-level game engines.',
-      'This game handles all of the collision checking through Quadtrees. During the program, each object is added to the base quadtree. When more than \'x\' amount of objects get put into that quadtree, the quadtree subdivides into 4 equally divided sub-quadtrees. This happens recursively until all objects are placed into their appropriate quadtree.',
-      'Now that all the objects are inside a quadtree, I only have to do collision checks between objects in that same bounding box. This saves time on performance and I do not have to do a collision check between objects that are not close to each other in the scene.'
-    ],
-    links: [
-      {
-        type: 'github',
-        url: 'https://github.com/BaseDorp/Asteroids-olcPixelGameEngine',
-        title: 'View on GitHub'
-      }
-    ]
-  },
-  {
+  }, 
+  { // Grapple Game Capstone
     id: 'grapple-game',
     title: 'Hardcore Pizza Delivery (Grapple Game)',
     tags: ['C++', 'Unreal Engine', 'Team'],
@@ -397,7 +397,7 @@ const projects = ref([
       }
     ]
   },
-  {
+  { // HTML Drawing App
     id: 'canvas-app',
     title: 'Canvas Drawing App',
     tags: ['JavaScript', 'Canvas'],
