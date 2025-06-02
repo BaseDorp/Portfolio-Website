@@ -212,6 +212,29 @@ const currentSlides = reactive({})
 const projects = ref([
   {
     id: 'vfx',
+    title: 'Online Multiplayer RPG',
+    tags: ['Unreal Engine', 'Blueprints'],
+    media: [
+      {
+        type: 'gif',
+        url: '/images/Animation.gif', // TODO make twitter video
+        alt: 'Character aura VFX animation'
+      }
+    ],
+    description: [
+      'My latest personal project has been creating a online multiplayer role playing game. I am working on this project to increase my knowledge in the broad amount of systems in unreal engine, as well as dive deeper into how online mutliplayer works with Unreal Engine 5 and Epic Online Subsystems.',
+      'As of writing this, the game contains',
+      '- Player Online Mutliplayer Replication',
+      '- Player Controller (idle/walk/run/jump/3-attack combo)',
+      '- Player vs Player and Player vs Enemy Collision and Damage',
+      '- Player Camera Controls',
+      '- More in the works',
+      'Two of my biggest learnings with this project so far are 1) Learning the replication systems inside unreal, and 2) Animation Blueprints inside. Knowing state driven animation in Unity, ABPs have a lot to offer one you understand the system.'
+    ],
+    links: []
+  },
+  {
+    id: 'vfx',
     title: 'VFX',
     tags: ['Unreal Engine', 'Niagara', 'VFX'],
     media: [

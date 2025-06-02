@@ -2,11 +2,11 @@
 defineProps({
   size: {
     type: Number,
-    default: 30,
+    default: 16,
   },
   radius: {
     type: Number,
-    default: 1,
+    default: 2,
   },
   offsetX: {
     type: Number,

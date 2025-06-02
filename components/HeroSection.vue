@@ -8,11 +8,11 @@
         
         <div class="space-y-4 text-white text-lg leading-relaxed">
           <p>
-            <span class="font-semibold">I have 2.5 years of work experience working IT Project Management</span>
+            <span class="font-semibold">I have 2.5 years of work experience working Project Management.</span>
           </p>
           
           <p>
-            Driven by a passion for game development, I specialize in Unreal Engine, data analytics, and project management in order to produce high quality work.
+            Driven by a passion for game development, I specialize in Unreal Engine, data analytics, and project management in order to produce high quality work. To see what I'm working on, please go to my X/Twitter account.
           </p>
         </div>
       </div>
