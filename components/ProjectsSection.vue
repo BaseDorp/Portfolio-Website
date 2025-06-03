@@ -165,7 +165,7 @@
                   </div>
                 </div>
               </div>
-              
+                            
               <!-- Project Description -->
               <div class="flex flex-col lg:flex-row gap-6">
                 <!-- Links -->
@@ -211,14 +211,14 @@ const currentSlides = reactive({})
 // Sample projects data - replace with your actual data
 const projects = ref([
   { // Heroverse
-    id: 'heroverse', // TODO what does the ID do??
+    id: 'heroverse',
     title: 'Online Multiplayer RPG',
     tags: ['Unreal Engine', 'Blueprints'],
     media: [
       {
         type: 'video',
-        url: 'https://x.com/i/status/1923889672222130309', // TODO make twitter video
-        alt: 'Demo video from twitter'
+        url: 'https://youtube.com/embed/PGHxwAhgGXE',
+        title: "Replication Demo"
       }
     ],
     description: [
