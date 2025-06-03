@@ -31,7 +31,7 @@
         <div class="flex items-center gap-8 mb-4">
           <div class="w-64 h-64 rounded-2xl overflow-hidden flex-shrink-0">
             <img 
-              src="/images/pfp.jpg" 
+              src="/images/pfp_web.jpg" 
               alt="Sam Hirsch Profile" 
               class="w-full h-full object-cover"
             />
